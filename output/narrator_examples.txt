@@ -1,0 +1,110 @@
+=== EXAMPLE SENTENCES FOR EACH NARRATOR ===
+
+--- Narrator 0 ---
+  (Conf: 1.00, Para: 30) WHAT HAPPENED TO LILY SILVER?
+  (Conf: 1.00, Para: 376) Goodlady, are you really good?
+  (Conf: 1.00, Para: 377) Even when no one is looking?
+  (Conf: 1.00, Para: 378) But do you understand your nature?
+  (Conf: 1.00, Para: 381) Is that really an answer?
+  (Conf: 1.00, Para: 402) “We used to visit?
+  (Conf: 1.00, Para: 609) Her: I miss you.
+  (Conf: 1.00, Para: 609) Can we forget drunk pre-Christmas stupidness (mine)?
+  (Conf: 1.00, Para: 639) “Eliot?” Sade called.
+  (Conf: 1.00, Para: 724) “Are you—are you alright?” Miranda stammered.
+
+--- Narrator 1 ---
+  (Conf: 1.00, Para: 3) her ears are filled with earth
+  (Conf: 1.00, Para: 5) her eyes are closed, but
+  (Conf: 1.00, Para: 6) her heart thrums hard like hummingbird wings.
+  (Conf: 1.00, Para: 29) me I will not allow her to live
+  (Conf: 1.00, Para: 50) Shrill singing between my ears.
+  (Conf: 1.00, Para: 67) But black wells only yield black water.
+  (Conf: 1.00, Para: 102) let me out from the small, the hot, the take me out of the fire i am ready i am hard like the stones you ate, bitter like those husks)
+  (Conf: 1.00, Para: 108) So I have done you good
+  (Conf: 1.00, Para: 197) Luc lightly touched Miranda’s shoulder.
+  (Conf: 1.00, Para: 207) They wouldn’t answer after
+
+--- Narrator 2 ---
+  (Conf: 1.00, Para: 136) “Because they’re even more hostile to the police than they are to each other?
+  (Conf: 1.00, Para: 136) Because the truth is too good for the police?
+  (Conf: 1.00, Para: 136) Because the police are a symbol of the country that’s fucking them over and assigning them marginal status?” Eliot suggested.
+  (Conf: 1.00, Para: 1549) Dad’s questions make me think that there may be some large omission that my memory has made out of ignorance and confusion.
+  (Conf: 1.00, Para: 1549) For example, did my sister wound her foot?
+  (Conf: 1.00, Para: 1549) Am I trying to remind myself of that?
+  (Conf: 1.00, Para: 1549) And if she did cut her foot, is it a clue to something?
+  (Conf: 1.00, Para: 933) “Where did you get it from?
+  (Conf: 1.00, Para: 933) Is it meant to be purple?” I asked.
+  (Conf: 1.00, Para: 933) Tijana tapped the side of her nose and winked.
+
+--- Narrator 3 ---
+  (Conf: 1.00, Para: 330) Miranda shook hands with Suryaz.
+  (Conf: 1.00, Para: 330) Deme shook hands with Miranda.
+  (Conf: 1.00, Para: 69) He wooed his wife with peach tarts he’d learnt from his pastry-maker father.
+  (Conf: 1.00, Para: 69) The peaches fused into the dough with their skins intact, bittered and sweetened by burnt sugar.
+  (Conf: 1.00, Para: 69) He won his wife with modern jazz clouded with cello and xylophone notes.
+  (Conf: 1.00, Para: 88) Martin and a couple of others came around to smoke and watch what promised to be “strange and unusual porn.” Women with horses, women with lizards, women with women plus horses and lizards.
+  (Conf: 1.00, Para: 88) I pretended to be leaner than I was and at one point mentioned aloud one of the “actor’s” resemblance to Miri’s boyfriend.
+  (Conf: 1.00, Para: 1533) The Shirelles block my nose.
+  (Conf: 1.00, Para: 1533) I breathe with my mouth open and my mouth is dry.
+  (Conf: 1.00, Para: 1533) Headaches mean that from my seat on the roof I mistake the cliffs for Table Mountain.
+
+--- Narrator 4 ---
+  (Conf: 1.00, Para: 746) He also let them take, for only ten pounds, a mannequin that he no longer used because it was too old and he’d had too many complaints about its proportions from his mainly full-figured female customers.
+  (Conf: 1.00, Para: 746) The mannequin had no hair, no face, was very white under a film of grime, and had a fifties waist and a nonexistent bust, which pleased Miranda because that way she would be able to see how the coat would look on her even as it was being made.
+  (Conf: 1.00, Para: 708) It was strange on the Western Heights, you could see both town and sea, one seeming to hold the other back with its split brick and glass.
+  (Conf: 1.00, Para: 708) On the Heights you were high and not at all secure, you felt as if you could fall at any moment, and that gave the stones and water a vitality of colour—if these things were to be the last you saw while falling, then they belonged to you.
+  (Conf: 1.00, Para: 1151) I looked back at him steadily.
+  (Conf: 1.00, Para: 1135) “Welcome home,” Dad said.
+  (Conf: 1.00, Para: 1206) I am good, Miranda thought.
+  (Conf: 1.00, Para: 1206) I am good, I am.
+  (Conf: 1.00, Para: 995) “That is true.” She smiled in a way that undid every knot in me.
+  (Conf: 1.00, Para: 995) There was no way I could be afraid to kiss her when she smiled like that, so I kissed her, and she kissed me back and we were like that until we gasped for air and laughed at each other, her eyelashes scraping my cheek so when I blinked they felt like my own.
+
+--- Narrator 5 ---
+  (Conf: 1.00, Para: 13) (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
+  (Conf: 1.00, Para: 62) The twins were sixteen and a half when their mother died.
+  (Conf: 1.00, Para: 62) She was shot in Port-au-Prince; gunfire sprayed into the queue at a voting station.
+  (Conf: 1.00, Para: 62) Her camera remained intact throughout.
+  (Conf: 1.00, Para: 62) Also, the lens was unstained.
+  (Conf: 1.00, Para: 62) To protect it from dust and flies, Lily had covered it with a square of checked cloth and an elastic band, rustic jam-jar style.
+  (Conf: 1.00, Para: 64) Stupid, stupid; Lily had been warned not to go to Haiti.
+  (Conf: 1.00, Para: 70) His fingers are ruined by too close and careless contact with heat; the parts that touch each other when the hand is held out straight and flat, the skin there is stretched, speckled and shiny.
+  (Conf: 1.00, Para: 70) Lily had never seen such hands.
+  (Conf: 1.00, Para: 70) To her they seemed the most wonderful in all the world.
+
+--- Narrator 6 ---
+  (Conf: 1.00, Para: 12) She shook her head and dropped to the disappointed hiss of a primary-school teacher, or a kid trying to borrow the authority of one: “Bad!
+  (Conf: 1.00, Para: 241) “Eliot!” she said through the gap.
+  (Conf: 1.00, Para: 287) You must have the hardest head in all creation,” the girl said.
+  (Conf: 1.00, Para: 296) I can’t be bothered.”
+  (Conf: 1.00, Para: 304) “Indeed!” the girl said.
+  (Conf: 1.00, Para: 304) what’s your name?”
+  (Conf: 1.00, Para: 333) This house is bigger than you know!
+  (Conf: 1.00, Para: 333) There are extra floors, with lots of people on them.
+  (Conf: 1.00, Para: 333) They look at you, and they never move.
+  (Conf: 1.00, Para: 333) We do not like them.
+
+--- Narrator 7 ---
+  (Conf: 1.00, Para: 354) “Okay,” I said, and got myself some water.
+  (Conf: 1.00, Para: 354) I went back to bed but couldn’t sleep anymore.
+  (Conf: 1.00, Para: 354) I was lying on a hardback biography of T. S. Eliot, but that wasn’t the reason.
+  (Conf: 1.00, Para: 354) After about half an hour I sat up again, and Lily was in the rocking chair by the window, Lily smiling with glad eyes as if she had something funny to tell me.
+  (Conf: 1.00, Para: 354) Lily in the chair, I mean Miranda was, Miri in a black T-shirt that scraped the tops of her thighs, Miri holding the rockers still with her bare feet.
+  (Conf: 1.00, Para: 354) When I jumped, she laughed.
+  (Conf: 1.00, Para: 354) I half expected her to say, “Again, do it again!”
+  (Conf: 1.00, Para: 441) The lift from the ground floor to the first floor, then from first to second, second to third, then from the third floor to the empty attic.
+  (Conf: 1.00, Para: 441) She peered up and down the broad passageways and tiptoed past the bedroom doors, feeling like dust, as if she was everywhere at once.
+  (Conf: 1.00, Para: 441) She could pull herself tight and then explode and choke everyone in the house.
+
+--- Narrator 8 ---
+  (Conf: 1.00, Para: 60) In the morning Miri was still sitting up, her arms stiff on the bedspread before her, gone so deep into sleep that she seemed part of the wall behind her, a girl-shaped texture rising from the plaster in an un-repeated pattern.
+  (Conf: 1.00, Para: 60) Her lips were pinched, her forehead lined with effort.
+  (Conf: 1.00, Para: 60) I think in her dreams she was listing things.
+  (Conf: 1.00, Para: 60) She tumbled awake and blurted, “Lily can’t stand Pachelbel’s Canon!” I would have laughed if she hadn’t said it with such terror.
+  (Conf: 1.00, Para: 426) Miranda, on one of the armchairs with her lap full of Barbie dolls and her thumb in her mouth, emptied the dolls onto the floor and crossed the room faster than a thought to grab a handful of Lily’s hair too, wrenching at her head from the other side.
+  (Conf: 1.00, Para: 426) Lily’s fingers tightened around the knitting needles, and she let out a long breath.
+  (Conf: 1.00, Para: 426) “Eliot,” she said, then: “Miranda!”
+  (Conf: 1.00, Para: 749) An influx of new guests in search of the perfect beach-to-town balanced holiday meant that Sade couldn’t help Miranda with her knitting for another three days, and it was four days before Miranda saw Eliot for longer than the time it took for him to stumble indoors in the early morning, toss food into his mouth, go to bed, then, in the late afternoon, rise from his bed, toss food into his mouth and leave the house again.
+  (Conf: 1.00, Para: 847) She bit at the white side—she bit!
+  (Conf: 1.00, Para: 847) In my distraction I lost hold of the other black guests, the couple on the second floor who I had kept in their bed the past three days, curved around the bed like fitted sheets with their faces crusting over.
+

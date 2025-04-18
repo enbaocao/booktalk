@@ -196,27 +196,57 @@ def extract_features(paragraphs):
     
     return np.array(features), feature_names
 
-def cluster_paragraphs(features, n_clusters=4):
-    """Cluster paragraphs using Gaussian Mixture Model"""
+def cluster_paragraphs(features, max_clusters=10):
+    """Cluster paragraphs using Gaussian Mixture Model, determining optimal clusters via BIC."""
     # Standardize features
     scaler = StandardScaler()
     scaled_features = scaler.fit_transform(features)
     
-    # Apply GMM
-    gmm = GaussianMixture(n_components=n_clusters, 
-                          covariance_type='full', 
-                          random_state=42,
-                          n_init=10)
-    gmm.fit(scaled_features)
-    
-    # Get cluster assignments and probabilities
-    labels = gmm.predict(scaled_features)
-    probabilities = gmm.predict_proba(scaled_features)
-    
-    # Calculate confidence (max probability)
+    # Determine optimal number of clusters using BIC
+    n_components_range = range(2, max_clusters + 1)
+    bic_scores = []
+    models = []
+
+    print(f"Testing cluster numbers from 2 to {max_clusters}...")
+    for n_components in n_components_range:
+        gmm = GaussianMixture(n_components=n_components, 
+                              covariance_type='full', 
+                              random_state=42,
+                              n_init=10)
+        gmm.fit(scaled_features)
+        models.append(gmm)
+        bic_scores.append(gmm.bic(scaled_features))
+        print(f"  Clusters: {n_components}, BIC: {bic_scores[-1]:.2f}")
+
+    # Find the model with the lowest BIC
+    optimal_n_clusters_index = np.argmin(bic_scores)
+    optimal_n_clusters = n_components_range[optimal_n_clusters_index]
+    best_gmm = models[optimal_n_clusters_index]
+    print(f"Optimal number of clusters based on BIC: {optimal_n_clusters}")
+
+    # Get results from the best model
+    labels = best_gmm.predict(scaled_features)
+    probabilities = best_gmm.predict_proba(scaled_features)
     confidence = np.max(probabilities, axis=1)
     
-    return labels, probabilities, confidence, scaled_features, gmm
+    return labels, probabilities, confidence, scaled_features, best_gmm, optimal_n_clusters, bic_scores, n_components_range
+
+def visualize_elbow_plot(bic_scores, n_components_range, optimal_n_clusters, output_dir='output'):
+    """Visualize the BIC scores to show the elbow."""
+    plt.figure(figsize=(10, 6))
+    plt.plot(n_components_range, bic_scores, marker='o', linestyle='-')
+    plt.xlabel('Number of Clusters (Narrators)', fontsize=12)
+    plt.ylabel('BIC Score (Lower is Better)', fontsize=12)
+    plt.title('BIC Scores for Different Numbers of Clusters', fontsize=16)
+    plt.xticks(n_components_range)
+    # Highlight the chosen optimal number
+    plt.axvline(optimal_n_clusters, color='r', linestyle='--', label=f'Optimal: {optimal_n_clusters}')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'elbow_plot_bic.png'), dpi=300)
+    plt.close()
+    print(f"Saved BIC elbow plot to {os.path.join(output_dir, 'elbow_plot_bic.png')}")
 
 def find_ambiguous_sections(paragraphs, labels, confidence, probabilities, threshold=0.7):
     """Identify paragraphs with ambiguous narrator assignment"""
@@ -364,9 +394,8 @@ def save_results(paragraphs, labels, confidence, probabilities, ambiguous_sectio
         df_transitions.to_csv(os.path.join(output_dir, 'narrator_transitions.csv'), index=False)
 
 def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
-                           transitions, output_dir='output'):
+                           transitions, optimal_n_clusters, output_dir='output'):
     """Generate a summary report of findings"""
-    unique_narrators = len(np.unique(labels))
     total_paragraphs = len(paragraphs)
     ambiguous_count = len(ambiguous_sections)
     transition_count = len(transitions)
@@ -377,19 +406,19 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
     with open(os.path.join(output_dir, 'summary_report.txt'), 'w') as f:
         f.write("=== NARRATOR ANALYSIS SUMMARY ===\n\n")
         f.write(f"Total paragraphs analyzed: {total_paragraphs}\n")
-        f.write(f"Number of identified narrators: {unique_narrators}\n")
+        f.write(f"Optimal number of narrators (determined by BIC): {optimal_n_clusters}\n")
         f.write(f"Average narrator confidence: {avg_confidence:.2f}\n\n")
         
         f.write("Narrator distribution:\n")
-        for narrator, count in narrator_distribution.items():
-            percentage = (count / total_paragraphs) * 100
+        for narrator in range(optimal_n_clusters):
+            count = narrator_distribution.get(narrator, 0)
+            percentage = (count / total_paragraphs) * 100 if total_paragraphs > 0 else 0
             f.write(f"  Narrator {narrator}: {count} paragraphs ({percentage:.1f}%)\n")
         
         f.write(f"\nAmbiguous narrator sections: {ambiguous_count} ({(ambiguous_count/total_paragraphs)*100:.1f}%)\n")
         f.write(f"Narrator transitions: {transition_count}\n\n")
         
         f.write("=== TOP AMBIGUOUS SECTIONS ===\n\n")
-        # Sort by confidence (ascending)
         top_ambiguous = sorted(ambiguous_sections, key=lambda x: x['confidence'])[:5]
         for i, section in enumerate(top_ambiguous):
             f.write(f"Ambiguous Section {i+1} (Confidence: {section['confidence']:.2f}):\n")
@@ -398,7 +427,6 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
             f.write(f"  Text: {section['text'][:200]}...\n\n")
         
         f.write("=== KEY NARRATOR TRANSITIONS ===\n\n")
-        # Get transitions with low confidence
         key_transitions = sorted(transitions, key=lambda x: x['confidence_after'])[:5]
         for i, trans in enumerate(key_transitions):
             f.write(f"Transition {i+1} (Confidence After: {trans['confidence_after']:.2f}):\n")
@@ -410,17 +438,14 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
     """Generate a file with example sentences for each narrator cluster."""
     narrator_sentences = {i: [] for i in np.unique(labels)}
     
-    # Collect high-confidence sentences for each narrator
     for i, paragraph in enumerate(paragraphs):
         label = labels[i]
         conf = confidence[i]
         
         if conf >= min_confidence:
             sentences = sent_tokenize(paragraph)
-            # Store sentences with their confidence and original index
             narrator_sentences[label].extend([(sent, conf, i) for sent in sentences])
 
-    # Select and save example sentences
     output_path = os.path.join(output_dir, 'narrator_examples.txt')
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("=== EXAMPLE SENTENCES FOR EACH NARRATOR ===\n\n")
@@ -428,12 +453,7 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
         for narrator in sorted(narrator_sentences.keys()):
             f.write(f"--- Narrator {narrator} ---\n")
             
-            # Sort sentences by confidence (descending) to prioritize most representative ones
             sorted_sentences = sorted(narrator_sentences[narrator], key=lambda x: x[1], reverse=True)
-            
-            # Select top N examples, ensuring variety if possible (though random selection is simpler)
-            # Using random.sample might pick less confident sentences if the pool is small.
-            # Let's take the top N most confident unique sentences.
             
             unique_sentences_added = set()
             examples_added = 0
@@ -441,7 +461,6 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
             for sentence, conf, p_idx in sorted_sentences:
                 if examples_added >= n_examples:
                     break
-                # Ensure sentence is reasonably long and unique for this narrator
                 if len(word_tokenize(sentence)) > 5 and sentence not in unique_sentences_added:
                     f.write(f"  (Conf: {conf:.2f}, Para: {p_idx}) {sentence}\n")
                     unique_sentences_added.add(sentence)
@@ -475,14 +494,12 @@ def check_dependencies():
     return True
 
 def main():
-    # Check dependencies
     if not check_dependencies():
         sys.exit(1)
         
-    # Set up command-line argument parser
     parser = argparse.ArgumentParser(description='Analyze narrators in a text using unsupervised learning.')
     parser.add_argument('--input', '-i', type=str, required=True, help='Path to the input text file')
-    parser.add_argument('--clusters', '-c', type=int, default=6, help='Number of narrator clusters to find')
+    parser.add_argument('--max-clusters', '-mc', type=int, default=10, help='Maximum number of clusters to test for BIC elbow method')
     parser.add_argument('--threshold', '-t', type=float, default=0.7, 
                         help='Confidence threshold for ambiguous narrator detection')
     parser.add_argument('--output', '-o', type=str, default='output', 
@@ -490,7 +507,6 @@ def main():
     
     args = parser.parse_args()
     
-    # Create output directory if it doesn't exist
     if not os.path.exists(args.output):
         os.makedirs(args.output)
     
@@ -506,9 +522,12 @@ def main():
     print("Extracting stylometric features...")
     features, feature_names = extract_features(paragraphs)
     
-    print("Clustering paragraphs...")
-    labels, probabilities, confidence, scaled_features, model = cluster_paragraphs(features, args.clusters)
+    print("Clustering paragraphs and determining optimal cluster count...")
+    labels, probabilities, confidence, scaled_features, model, optimal_n_clusters, bic_scores, n_components_range = cluster_paragraphs(features, args.max_clusters)
     
+    print("Visualizing BIC elbow plot...")
+    visualize_elbow_plot(bic_scores, n_components_range, optimal_n_clusters, args.output)
+
     print("Finding ambiguous narrator sections...")
     ambiguous_sections = find_ambiguous_sections(paragraphs, labels, confidence, 
                                                 probabilities, args.threshold)
@@ -526,7 +545,7 @@ def main():
     
     print("Generating summary report...")
     generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
-                           transitions, args.output)
+                           transitions, optimal_n_clusters, args.output)
     
     print("Saving detailed results...")
     save_results(paragraphs, labels, confidence, probabilities, 
@@ -536,6 +555,7 @@ def main():
     generate_example_sentences(paragraphs, labels, confidence, n_examples=10, output_dir=args.output)
     
     print("\nAnalysis complete! Check the output files in the", args.output, "directory:")
+    print("- elbow_plot_bic.png: BIC scores used to determine the optimal number of narrators")
     print("- narrator_clusters.png: Visual representation of narrator clusters")
     print("- narrator_timeline.png: Narrator transitions throughout the text")
     print("- confidence_distribution.png: Distribution of confidence scores by narrator")

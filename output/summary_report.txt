@@ -1,51 +1,74 @@
 === NARRATOR ANALYSIS SUMMARY ===
 
 Total paragraphs analyzed: 1568
-Number of identified narrators: 6
+Optimal number of narrators (determined by BIC): 9
 Average narrator confidence: 1.00
 
 Narrator distribution:
-  Narrator 0: 28 paragraphs (1.8%)
-  Narrator 1: 27 paragraphs (1.7%)
-  Narrator 2: 741 paragraphs (47.3%)
-  Narrator 3: 322 paragraphs (20.5%)
-  Narrator 4: 165 paragraphs (10.5%)
-  Narrator 5: 285 paragraphs (18.2%)
+  Narrator 0: 197 paragraphs (12.6%)
+  Narrator 1: 318 paragraphs (20.3%)
+  Narrator 2: 118 paragraphs (7.5%)
+  Narrator 3: 488 paragraphs (31.1%)
+  Narrator 4: 249 paragraphs (15.9%)
+  Narrator 5: 146 paragraphs (9.3%)
+  Narrator 6: 18 paragraphs (1.1%)
+  Narrator 7: 22 paragraphs (1.4%)
+  Narrator 8: 12 paragraphs (0.8%)
 
-Ambiguous narrator sections: 1 (0.1%)
-Narrator transitions: 1017
+Ambiguous narrator sections: 7 (0.4%)
+Narrator transitions: 1189
 
 === TOP AMBIGUOUS SECTIONS ===
 
-Ambiguous Section 1 (Confidence: 0.65):
-  Paragraph Index: 71
-  Assigned Narrator: 4
-  Text: One night she said to him, “I love you, do you love me?” She said it as lightly as such a thing can be said without it being a joke. Immediately he replied, “Yes I love you, and you are beautiful,” pr...
+Ambiguous Section 1 (Confidence: 0.52):
+  Paragraph Index: 1087
+  Assigned Narrator: 2
+  Text: “Why don’t you think it’s possible?” she asked. “Because everyone can see me?”...
+
+Ambiguous Section 2 (Confidence: 0.53):
+  Paragraph Index: 756
+  Assigned Narrator: 2
+  Text: “Indeed. Junior reporter at The Dover Post. Probably just retyping memos from the council on their new initiatives or something. What’s the mannequin for?”...
+
+Ambiguous Section 3 (Confidence: 0.57):
+  Paragraph Index: 1032
+  Assigned Narrator: 3
+  Text: “Er . . . well, then the woman took Eden’s hand and they went home together.”...
+
+Ambiguous Section 4 (Confidence: 0.63):
+  Paragraph Index: 1307
+  Assigned Narrator: 2
+  Text: “I’m sorry,” Sade said, eyeing me. “You are a maid of Kent, are you not?”...
+
+Ambiguous Section 5 (Confidence: 0.64):
+  Paragraph Index: 405
+  Assigned Narrator: 0
+  Text: Lily stretched her legs out in front of her and cricked her neck. “Oh yes? What do you remember, my Miranda?”...
 
 === KEY NARRATOR TRANSITIONS ===
 
-Transition 1 (Confidence After: 0.81):
-  Position: Paragraph 344
-  From Narrator 4 to Narrator 5
-  Confidence Before: 1.00
-
-Transition 2 (Confidence After: 0.86):
-  Position: Paragraph 361
+Transition 1 (Confidence After: 0.52):
+  Position: Paragraph 1087
   From Narrator 4 to Narrator 2
   Confidence Before: 1.00
 
-Transition 3 (Confidence After: 0.91):
-  Position: Paragraph 941
-  From Narrator 5 to Narrator 0
-  Confidence Before: 1.00
-
-Transition 4 (Confidence After: 0.94):
-  Position: Paragraph 918
+Transition 2 (Confidence After: 0.53):
+  Position: Paragraph 756
   From Narrator 0 to Narrator 2
   Confidence Before: 1.00
 
-Transition 5 (Confidence After: 0.95):
-  Position: Paragraph 139
-  From Narrator 2 to Narrator 0
+Transition 3 (Confidence After: 0.57):
+  Position: Paragraph 1032
+  From Narrator 4 to Narrator 3
+  Confidence Before: 1.00
+
+Transition 4 (Confidence After: 0.63):
+  Position: Paragraph 1307
+  From Narrator 0 to Narrator 2
+  Confidence Before: 1.00
+
+Transition 5 (Confidence After: 0.64):
+  Position: Paragraph 405
+  From Narrator 3 to Narrator 0
   Confidence Before: 1.00
 
