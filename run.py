@@ -13,27 +13,21 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 import pandas as pd
 import seaborn as sns
+import warnings
 
-# Check and download required NLTK resources
-def download_nltk_resource(resource_id, resource_name):
-    try:
-        nltk.data.find(f'tokenizers/{resource_id}')
-        print(f"NLTK '{resource_name}' resource found.")
-    except LookupError:
-        print(f"NLTK '{resource_name}' resource not found. Downloading...")
-        nltk.download(resource_name, quiet=True)
-        # Re-check after download attempt
-        try:
-            nltk.data.find(f'tokenizers/{resource_id}')
-            print(f"NLTK '{resource_name}' resource downloaded successfully.")
-        except LookupError:
-            print(f"Error: Failed to download or locate NLTK '{resource_name}' resource.")
-            print("Please check your internet connection or NLTK setup.")
-            sys.exit(1) # Exit if essential resource is missing
+# Suppress specific sklearn warning about n_iter vs max_iter
+warnings.filterwarnings("ignore", message="'n_iter' was renamed to 'max_iter'", category=FutureWarning)
+import warnings
 
-# Download both punkt and punkt_tab
-download_nltk_resource('punkt', 'punkt')
-download_nltk_resource('punkt_tab', 'punkt_tab') # Re-added explicit punkt_tab download
+# Suppress specific sklearn warning about n_iter vs max_iter
+warnings.filterwarnings("ignore", message="'n_iter' was renamed to 'max_iter'", category=FutureWarning)
+
+# Check and download required resources
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    print("Downloading NLTK punkt...")
+    nltk.download('punkt', quiet=True)
 
 try:
     nlp = spacy.load('en_core_web_sm')
@@ -44,15 +38,21 @@ except OSError:
     nlp = spacy.load('en_core_web_sm')
 
 def load_and_split_text(file_path):
-    """Load text file and split into paragraphs"""
+    """Load text file and split into sentences instead of paragraphs"""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             text = file.read()
-        # Split text into paragraphs
-        paragraphs = re.split(r'\n\s*\n', text)
-        # Remove very short paragraphs (likely formatting artifacts)
-        paragraphs = [p.strip() for p in paragraphs if len(p.strip()) > 20]
-        return paragraphs
+        # Split text into sentences using NLTK's sentence tokenizer
+        sentences = sent_tokenize(text)
+        # Remove very short sentences (likely formatting artifacts)
+        sentences = [s.strip() for s in sentences if len(s.strip()) > 10]
+        print(f"Total sentences found: {len(sentences)}")
+        # Preview first few sentences
+        if sentences:
+            print("First few sentences:")
+            for i, s in enumerate(sentences[:3]):
+                print(f"  {i+1}: {s[:100]}{'...' if len(s) > 100 else ''}")
+        return sentences
     except FileNotFoundError:
         print(f"File not found: {file_path}")
         return []
@@ -61,12 +61,11 @@ def load_and_split_text(file_path):
         return []
 
 def average_sentence_length(text):
-    """Calculate average sentence length in words"""
-    sentences = sent_tokenize(text)
-    if not sentences:
-        return 0
-    words_per_sentence = [len(word_tokenize(s)) for s in sentences]
-    return sum(words_per_sentence) / len(sentences)
+    """Calculate sentence length in words
+    When analyzing at sentence level, this is just the word count"""
+    # For sentence-level analysis, each text is already a single sentence
+    words = word_tokenize(text)
+    return len(words)
 
 def lexical_diversity(text):
     """Calculate lexical diversity (type-token ratio)"""
@@ -97,8 +96,8 @@ def first_person_ratio(text):
         return 0
     return first_person_count / pronoun_count
 
-def extract_features(paragraphs):
-    """Extract stylometric features from each paragraph"""
+def extract_features(sentences):
+    """Extract stylometric features from each sentence"""
     features = []
     feature_names = [
         'avg_sentence_length',
@@ -119,24 +118,24 @@ def extract_features(paragraphs):
         'semicolon_ratio'
     ]
     
-    for paragraph in paragraphs:
-        # Skip empty paragraphs
-        if not paragraph.strip():
+    for sentence in sentences:
+        # Skip empty sentences
+        if not sentence.strip():
             continue
             
         # Basic metrics
-        avg_sent_len = average_sentence_length(paragraph)
-        lex_div = lexical_diversity(paragraph)
-        words = word_tokenize(paragraph.lower())
+        avg_sent_len = average_sentence_length(sentence)  # For sentences, this is the same as word count
+        lex_div = lexical_diversity(sentence)
+        words = word_tokenize(sentence.lower())
         word_count = len(words)
         
         # Pronoun usage
-        pronoun_count = count_pronouns(paragraph)
+        pronoun_count = count_pronouns(sentence)
         pronoun_ratio = pronoun_count / word_count if word_count > 0 else 0
-        first_person_pct = first_person_ratio(paragraph)
+        first_person_pct = first_person_ratio(sentence)
         
         # POS distribution using spaCy
-        doc = nlp(paragraph)
+        doc = nlp(sentence)
         pos_counts = Counter([token.pos_ for token in doc])
         total_tokens = len(doc)
         
@@ -154,13 +153,13 @@ def extract_features(paragraphs):
         punct_count = sum(1 for token in doc if token.is_punct)
         punct_density = punct_count / word_count if word_count > 0 else 0
         
-        # Sentences per paragraph
-        sent_count = len(sent_tokenize(paragraph))
+        # For single sentences, this is always 1, but keep for consistency
+        sent_count = 1
         
         # Special punctuation ratios
-        question_marks = paragraph.count('?')
-        exclamation_marks = paragraph.count('!')
-        semicolons = paragraph.count(';')
+        question_marks = sentence.count('?')
+        exclamation_marks = sentence.count('!')
+        semicolons = sentence.count(';')
         
         total_punct = punct_count if punct_count > 0 else 1  # Avoid division by zero
         
@@ -193,7 +192,7 @@ def extract_features(paragraphs):
     return np.array(features), feature_names
 
 def cluster_paragraphs(features, n_clusters=4):
-    """Cluster paragraphs using Gaussian Mixture Model"""
+    """Cluster sentences using Gaussian Mixture Model"""
     # Standardize features
     scaler = StandardScaler()
     scaled_features = scaler.fit_transform(features)
@@ -214,21 +213,21 @@ def cluster_paragraphs(features, n_clusters=4):
     
     return labels, probabilities, confidence, scaled_features, gmm
 
-def find_ambiguous_sections(paragraphs, labels, confidence, probabilities, threshold=0.7):
-    """Identify paragraphs with ambiguous narrator assignment"""
-    ambiguous_paragraphs = []
+def find_ambiguous_sections(sentences, labels, confidence, probabilities, threshold=0.6):
+    """Identify sentences with ambiguous narrator assignment"""
+    ambiguous_sentences = []
     
     for i, conf in enumerate(confidence):
         if conf < threshold:
-            ambiguous_paragraphs.append({
+            ambiguous_sentences.append({
                 'index': i,
-                'text': paragraphs[i],
+                'text': sentences[i],
                 'confidence': float(conf),
                 'assigned_cluster': int(labels[i]),
                 'probabilities': probabilities[i].tolist()
             })
     
-    return ambiguous_paragraphs
+    return ambiguous_sentences
 
 def analyze_narrator_flow(labels, confidence):
     """Analyze narrator transitions throughout the text"""
@@ -249,7 +248,10 @@ def analyze_narrator_flow(labels, confidence):
 def visualize_clusters(scaled_features, labels, confidence, output_dir='output'):
     """Visualize clusters using t-SNE"""
     # Reduce dimensions for visualization
-    tsne = TSNE(n_components=2, random_state=42, perplexity=30, n_iter=1000)
+    # Adjust perplexity to be less than number of samples
+    perplexity_value = min(30, len(scaled_features) - 1)
+    print(f"Using perplexity value of {perplexity_value} for t-SNE (based on {len(scaled_features)} samples)")
+    tsne = TSNE(n_components=2, random_state=42, perplexity=perplexity_value, max_iter=1000)
     reduced_features = tsne.fit_transform(scaled_features)
     
     # Create dataframe for seaborn
@@ -294,7 +296,7 @@ def visualize_clusters(scaled_features, labels, confidence, output_dir='output')
         plt.scatter(i, labels[i], c=palette[labels[i]], alpha=confidence[i], s=50)
     
     plt.title('Narrator Transitions Throughout the Text', fontsize=16)
-    plt.xlabel('Paragraph Index', fontsize=12)
+    plt.xlabel('Sentence Index', fontsize=12)
     plt.ylabel('Assigned Narrator', fontsize=12)
     plt.yticks(np.unique(labels))
     plt.tight_layout()
@@ -320,8 +322,8 @@ def analyze_feature_importance(model, feature_names, output_dir='output'):
     # Extract means for each cluster
     means = model.means_
     
-    # Create a heatmap of feature importance by cluster
-    plt.figure(figsize=(12, 8))
+            # Create a heatmap of feature importance by cluster
+    plt.figure(figsize=(14, 8))
     sns.heatmap(means, annot=False, cmap='coolwarm', 
                 xticklabels=feature_names, 
                 yticklabels=[f'Narrator {i}' for i in range(means.shape[0])])
@@ -331,15 +333,15 @@ def analyze_feature_importance(model, feature_names, output_dir='output'):
     plt.savefig(os.path.join(output_dir, 'feature_importance.png'), dpi=300)
     plt.close()
 
-def save_results(paragraphs, labels, confidence, probabilities, ambiguous_sections, 
+def save_results(sentences, labels, confidence, probabilities, ambiguous_sections, 
                 transitions, output_dir='output'):
     """Save analysis results to files"""
-    # Save paragraph assignments
+    # Save sentence assignments
     results = []
-    for i, paragraph in enumerate(paragraphs):
+    for i, sentence in enumerate(sentences):
         results.append({
-            'paragraph_index': i,
-            'text': paragraph[:100] + '...' if len(paragraph) > 100 else paragraph,
+            'sentence_index': i,
+            'text': sentence[:100] + '...' if len(sentence) > 100 else sentence,
             'assigned_narrator': int(labels[i]),
             'confidence': float(confidence[i]),
             'probabilities': probabilities[i].tolist()
@@ -359,11 +361,11 @@ def save_results(paragraphs, labels, confidence, probabilities, ambiguous_sectio
         df_transitions = pd.DataFrame(transitions)
         df_transitions.to_csv(os.path.join(output_dir, 'narrator_transitions.csv'), index=False)
 
-def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
+def generate_summary_report(sentences, labels, confidence, ambiguous_sections, 
                            transitions, output_dir='output'):
     """Generate a summary report of findings"""
     unique_narrators = len(np.unique(labels))
-    total_paragraphs = len(paragraphs)
+    total_sentences = len(sentences)
     ambiguous_count = len(ambiguous_sections)
     transition_count = len(transitions)
     
@@ -372,16 +374,16 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
     
     with open(os.path.join(output_dir, 'summary_report.txt'), 'w') as f:
         f.write("=== NARRATOR ANALYSIS SUMMARY ===\n\n")
-        f.write(f"Total paragraphs analyzed: {total_paragraphs}\n")
+        f.write(f"Total sentences analyzed: {total_sentences}\n")
         f.write(f"Number of identified narrators: {unique_narrators}\n")
         f.write(f"Average narrator confidence: {avg_confidence:.2f}\n\n")
         
         f.write("Narrator distribution:\n")
         for narrator, count in narrator_distribution.items():
-            percentage = (count / total_paragraphs) * 100
-            f.write(f"  Narrator {narrator}: {count} paragraphs ({percentage:.1f}%)\n")
+            percentage = (count / total_sentences) * 100
+            f.write(f"  Narrator {narrator}: {count} sentences ({percentage:.1f}%)\n")
         
-        f.write(f"\nAmbiguous narrator sections: {ambiguous_count} ({(ambiguous_count/total_paragraphs)*100:.1f}%)\n")
+        f.write(f"\nAmbiguous narrator sections: {ambiguous_count} ({(ambiguous_count/total_sentences)*100:.1f}%)\n")
         f.write(f"Narrator transitions: {transition_count}\n\n")
         
         f.write("=== TOP AMBIGUOUS SECTIONS ===\n\n")
@@ -429,8 +431,8 @@ def main():
     parser = argparse.ArgumentParser(description='Analyze narrators in a text using unsupervised learning.')
     parser.add_argument('--input', '-i', type=str, required=True, help='Path to the input text file')
     parser.add_argument('--clusters', '-c', type=int, default=4, help='Number of narrator clusters to find')
-    parser.add_argument('--threshold', '-t', type=float, default=0.7, 
-                        help='Confidence threshold for ambiguous narrator detection')
+    parser.add_argument('--threshold', '-t', type=float, default=0.6, 
+                        help='Confidence threshold for ambiguous narrator detection (default lowered to 0.6 for sentence analysis)')
     parser.add_argument('--output', '-o', type=str, default='output', 
                         help='Output directory for results')
     
@@ -441,22 +443,22 @@ def main():
         os.makedirs(args.output)
     
     print("Loading and processing text...")
-    paragraphs = load_and_split_text(args.input)
+    sentences = load_and_split_text(args.input)
     
-    if not paragraphs:
-        print("No paragraphs found. Check the file path and format.")
+    if not sentences:
+        print("No sentences found. Check the file path and format.")
         return
     
-    print(f"Extracted {len(paragraphs)} paragraphs.")
+    print(f"Extracted {len(sentences)} sentences.")
     
     print("Extracting stylometric features...")
-    features, feature_names = extract_features(paragraphs)
+    features, feature_names = extract_features(sentences)
     
-    print("Clustering paragraphs...")
+    print("Clustering sentences...")
     labels, probabilities, confidence, scaled_features, model = cluster_paragraphs(features, args.clusters)
     
     print("Finding ambiguous narrator sections...")
-    ambiguous_sections = find_ambiguous_sections(paragraphs, labels, confidence, 
+    ambiguous_sections = find_ambiguous_sections(sentences, labels, confidence, 
                                                 probabilities, args.threshold)
     print(f"Found {len(ambiguous_sections)} ambiguous sections.")
     
@@ -471,11 +473,11 @@ def main():
     analyze_feature_importance(model, feature_names, args.output)
     
     print("Generating summary report...")
-    generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
+    generate_summary_report(sentences, labels, confidence, ambiguous_sections, 
                            transitions, args.output)
     
     print("Saving detailed results...")
-    save_results(paragraphs, labels, confidence, probabilities, 
+    save_results(sentences, labels, confidence, probabilities, 
                 ambiguous_sections, transitions, args.output)
     
     print("\nAnalysis complete! Check the output files in the", args.output, "directory:")
@@ -485,7 +487,7 @@ def main():
     print("- feature_importance.png: Importance of different features for each narrator")
     print("- summary_report.txt: Summary of key findings")
     print("- narrator_analysis_results.csv: Complete analysis results")
-    print("- ambiguous_narrators.csv: Paragraphs with ambiguous narrator assignment")
+    print("- ambiguous_narrators.csv: Sentences with ambiguous narrator assignment")
     print("- narrator_transitions.csv: Transitions between narrators")
 
 if __name__ == "__main__":
