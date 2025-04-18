@@ -1,2 +1,2 @@
 index,text,confidence,assigned_cluster,probabilities
-647,"“Hello, Eliot .",0.5155957671464885,1,"[8.625796717410469e-21, 0.5155957671464885, 0.48440422343167194, 9.421839462640821e-09]"
+71,"One night she said to him, “I love you, do you love me?” She said it as lightly as such a thing can be said without it being a joke. Immediately he replied, “Yes I love you, and you are beautiful,” pronouncing his words with a hint of impatience because they had been waiting in him a long time.",0.6539012788764895,4,"[6.844451798952701e-48, 1.4096641629149962e-35, 0.0, 0.0, 0.6539012788764895, 0.3460987211235113]"
