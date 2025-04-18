@@ -1,74 +1,70 @@
 === NARRATOR ANALYSIS SUMMARY ===
 
 Total paragraphs analyzed: 1568
-Optimal number of narrators (determined by BIC): 9
-Average narrator confidence: 1.00
+Specified number of narrators: 5
+Average narrator confidence: 0.99
 
 Narrator distribution:
-  Narrator 0: 197 paragraphs (12.6%)
-  Narrator 1: 318 paragraphs (20.3%)
-  Narrator 2: 118 paragraphs (7.5%)
-  Narrator 3: 488 paragraphs (31.1%)
-  Narrator 4: 249 paragraphs (15.9%)
-  Narrator 5: 146 paragraphs (9.3%)
-  Narrator 6: 18 paragraphs (1.1%)
-  Narrator 7: 22 paragraphs (1.4%)
-  Narrator 8: 12 paragraphs (0.8%)
+  Narrator 0: 25 paragraphs (1.6%)
+  Narrator 1: 1022 paragraphs (65.2%)
+  Narrator 2: 351 paragraphs (22.4%)
+  Narrator 3: 27 paragraphs (1.7%)
+  Narrator 4: 143 paragraphs (9.1%)
 
-Ambiguous narrator sections: 7 (0.4%)
-Narrator transitions: 1189
+Ambiguous narrator sections: 11 (0.7%)
+Narrator transitions: 800
 
 === TOP AMBIGUOUS SECTIONS ===
 
-Ambiguous Section 1 (Confidence: 0.52):
-  Paragraph Index: 1087
+Ambiguous Section 1 (Confidence: 0.50):
+  Paragraph Index: 1192
+  Assigned Narrator: 4
+  Text: Eliot read aloud from Luc’s manuscript. The project, it seemed, had changed, from a book themed around seasonality to a cookbook for reluctant eaters. She recognised meals she’d pretended to like and ...
+
+Ambiguous Section 2 (Confidence: 0.52):
+  Paragraph Index: 1085
+  Assigned Narrator: 1
+  Text: She took a deep breath and rested her chin on her hand. “I have a theory,” she said. I nodded at her to continue and she said, “There’s this fireplace downstairs. I think I went down there for some re...
+
+Ambiguous Section 3 (Confidence: 0.55):
+  Paragraph Index: 662
+  Assigned Narrator: 1
+  Text: Monday was the day I got the letter from the South African production company, offering me their internship. The acceptance sank my heart. My Dad knows magazine people who wrote me glowing, if vague, ...
+
+Ambiguous Section 4 (Confidence: 0.61):
+  Paragraph Index: 1165
   Assigned Narrator: 2
-  Text: “Why don’t you think it’s possible?” she asked. “Because everyone can see me?”...
+  Text: Last night had been the fifth, perhaps the sixth night that Miranda had lain by Ore, smelling her, running her nose over the other girl’s body, turning the beginning of a bite into a kiss whenever Ore...
 
-Ambiguous Section 2 (Confidence: 0.53):
-  Paragraph Index: 756
+Ambiguous Section 5 (Confidence: 0.61):
+  Paragraph Index: 176
   Assigned Narrator: 2
-  Text: “Indeed. Junior reporter at The Dover Post. Probably just retyping memos from the council on their new initiatives or something. What’s the mannequin for?”...
-
-Ambiguous Section 3 (Confidence: 0.57):
-  Paragraph Index: 1032
-  Assigned Narrator: 3
-  Text: “Er . . . well, then the woman took Eden’s hand and they went home together.”...
-
-Ambiguous Section 4 (Confidence: 0.63):
-  Paragraph Index: 1307
-  Assigned Narrator: 2
-  Text: “I’m sorry,” Sade said, eyeing me. “You are a maid of Kent, are you not?”...
-
-Ambiguous Section 5 (Confidence: 0.64):
-  Paragraph Index: 405
-  Assigned Narrator: 0
-  Text: Lily stretched her legs out in front of her and cricked her neck. “Oh yes? What do you remember, my Miranda?”...
+  Text: When she tried on the last dress in the pile he’d built up, she was sure he would like it. He had to. It didn’t look like anything she already had, the skirt flared wonderfully, and there was the swee...
 
 === KEY NARRATOR TRANSITIONS ===
 
-Transition 1 (Confidence After: 0.52):
-  Position: Paragraph 1087
+Transition 1 (Confidence After: 0.50):
+  Position: Paragraph 1192
+  From Narrator 1 to Narrator 4
+  Confidence Before: 1.00
+
+Transition 2 (Confidence After: 0.61):
+  Position: Paragraph 176
   From Narrator 4 to Narrator 2
   Confidence Before: 1.00
 
-Transition 2 (Confidence After: 0.53):
-  Position: Paragraph 756
-  From Narrator 0 to Narrator 2
+Transition 3 (Confidence After: 0.62):
+  Position: Paragraph 422
+  From Narrator 1 to Narrator 4
   Confidence Before: 1.00
 
-Transition 3 (Confidence After: 0.57):
-  Position: Paragraph 1032
-  From Narrator 4 to Narrator 3
+Transition 4 (Confidence After: 0.67):
+  Position: Paragraph 85
+  From Narrator 4 to Narrator 2
   Confidence Before: 1.00
 
-Transition 4 (Confidence After: 0.63):
-  Position: Paragraph 1307
-  From Narrator 0 to Narrator 2
-  Confidence Before: 1.00
-
-Transition 5 (Confidence After: 0.64):
-  Position: Paragraph 405
-  From Narrator 3 to Narrator 0
+Transition 5 (Confidence After: 0.68):
+  Position: Paragraph 1214
+  From Narrator 1 to Narrator 2
   Confidence Before: 1.00
 

@@ -80,26 +80,17 @@ def lexical_diversity(text):
     return len(set(words)) / len(words)
 
 def count_pronouns(text):
-    """Count personal pronouns"""
-    pronouns = ['i', 'me', 'my', 'mine', 'myself', 
-                'you', 'your', 'yours', 'yourself', 
-                'he', 'him', 'his', 'himself', 
-                'she', 'her', 'hers', 'herself',
-                'it', 'its', 'itself',
-                'we', 'us', 'our', 'ours', 'ourselves',
-                'they', 'them', 'their', 'theirs', 'themselves']
+    """Count first-person and third-person personal pronouns."""
+    first_person = {'i', 'me', 'my', 'mine', 'myself', 'we', 'us', 'our', 'ours', 'ourselves'}
+    third_person = {'he', 'him', 'his', 'himself', 'she', 'her', 'hers', 'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves'}
+    
     words = word_tokenize(text.lower())
-    return sum(1 for word in words if word in pronouns)
-
-def first_person_ratio(text):
-    """Calculate ratio of first-person pronouns to all pronouns"""
-    first_person = ['i', 'me', 'my', 'mine', 'myself', 'we', 'us', 'our', 'ours', 'ourselves']
-    words = word_tokenize(text.lower())
+    
     first_person_count = sum(1 for word in words if word in first_person)
-    pronoun_count = count_pronouns(text)
-    if pronoun_count == 0:
-        return 0
-    return first_person_count / pronoun_count
+    third_person_count = sum(1 for word in words if word in third_person)
+    
+    # Return counts for both categories
+    return first_person_count, third_person_count
 
 def extract_features(paragraphs):
     """Extract stylometric features from each paragraph"""
@@ -108,8 +99,10 @@ def extract_features(paragraphs):
         'avg_sentence_length',
         'lexical_diversity',
         'word_count',
-        'pronoun_ratio',
-        'first_person_ratio',
+        'total_pronoun_ratio',
+        'third_person_pronoun_ratio',
+        'third_vs_first_person_ratio',
+        'no_first_person_binary',
         'noun_percent',
         'verb_percent',
         'adj_percent',
@@ -124,49 +117,51 @@ def extract_features(paragraphs):
     ]
     
     for paragraph in paragraphs:
-        # Skip empty paragraphs
         if not paragraph.strip():
             continue
             
-        # Basic metrics
         avg_sent_len = average_sentence_length(paragraph)
         lex_div = lexical_diversity(paragraph)
         words = word_tokenize(paragraph.lower())
         word_count = len(words)
         
-        # Pronoun usage
-        pronoun_count = count_pronouns(paragraph)
-        pronoun_ratio = pronoun_count / word_count if word_count > 0 else 0
-        first_person_pct = first_person_ratio(paragraph)
+        # Pronoun usage - Updated
+        first_person_count, third_person_count = count_pronouns(paragraph)
+        total_pronoun_count = first_person_count + third_person_count
+        
+        total_pronoun_ratio = total_pronoun_count / word_count if word_count > 0 else 0
+        third_person_pronoun_ratio = third_person_count / word_count if word_count > 0 else 0
+        
+        # Calculate third vs first ratio, handle division by zero
+        total_first_third = first_person_count + third_person_count
+        third_vs_first_person_ratio = (third_person_count / total_first_third) if total_first_third > 0 else 0
+        
+        # Binary feature for absence of first person
+        no_first_person_binary = 1 if first_person_count == 0 else 0
         
         # POS distribution using spaCy
         doc = nlp(paragraph)
         pos_counts = Counter([token.pos_ for token in doc])
         total_tokens = len(doc)
         
-        # Calculate POS percentages
         noun_pct = pos_counts['NOUN'] / total_tokens if total_tokens > 0 else 0
         verb_pct = pos_counts['VERB'] / total_tokens if total_tokens > 0 else 0
         adj_pct = pos_counts['ADJ'] / total_tokens if total_tokens > 0 else 0
         adv_pct = pos_counts['ADV'] / total_tokens if total_tokens > 0 else 0
         det_pct = pos_counts['DET'] / total_tokens if total_tokens > 0 else 0
         
-        # Average word length
         avg_word_len = sum(len(word) for word in words) / word_count if word_count > 0 else 0
         
-        # Punctuation density
         punct_count = sum(1 for token in doc if token.is_punct)
         punct_density = punct_count / word_count if word_count > 0 else 0
         
-        # Sentences per paragraph
         sent_count = len(sent_tokenize(paragraph))
         
-        # Special punctuation ratios
         question_marks = paragraph.count('?')
         exclamation_marks = paragraph.count('!')
         semicolons = paragraph.count(';')
         
-        total_punct = punct_count if punct_count > 0 else 1  # Avoid division by zero
+        total_punct = punct_count if punct_count > 0 else 1
         
         question_ratio = question_marks / total_punct
         exclamation_ratio = exclamation_marks / total_punct
@@ -177,8 +172,10 @@ def extract_features(paragraphs):
             avg_sent_len,
             lex_div,
             word_count,
-            pronoun_ratio,
-            first_person_pct,
+            total_pronoun_ratio,
+            third_person_pronoun_ratio,
+            third_vs_first_person_ratio,
+            no_first_person_binary,
             noun_pct,
             verb_pct,
             adj_pct,
@@ -196,39 +193,57 @@ def extract_features(paragraphs):
     
     return np.array(features), feature_names
 
-def cluster_paragraphs(features, max_clusters=10):
-    """Cluster paragraphs using Gaussian Mixture Model, determining optimal clusters via BIC."""
+def cluster_paragraphs(features, max_clusters=10, n_clusters_override=None):
+    """Cluster paragraphs using Gaussian Mixture Model. 
+       If n_clusters_override is given, use that. Otherwise, determine optimal clusters via BIC."""
     # Standardize features
     scaler = StandardScaler()
     scaled_features = scaler.fit_transform(features)
     
-    # Determine optimal number of clusters using BIC
-    n_components_range = range(2, max_clusters + 1)
-    bic_scores = []
-    models = []
+    bic_scores = None
+    n_components_range = None
+    optimal_n_clusters = None
 
-    print(f"Testing cluster numbers from 2 to {max_clusters}...")
-    for n_components in n_components_range:
-        gmm = GaussianMixture(n_components=n_components, 
+    if n_clusters_override is not None:
+        print(f"Using specified number of clusters: {n_clusters_override}")
+        optimal_n_clusters = n_clusters_override
+        gmm = GaussianMixture(n_components=optimal_n_clusters, 
                               covariance_type='full', 
                               random_state=42,
                               n_init=10)
         gmm.fit(scaled_features)
-        models.append(gmm)
-        bic_scores.append(gmm.bic(scaled_features))
-        print(f"  Clusters: {n_components}, BIC: {bic_scores[-1]:.2f}")
+        best_gmm = gmm
+    else:
+        # Determine optimal number of clusters using BIC
+        n_components_range = range(2, max_clusters + 1)
+        bic_scores = []
+        models = []
 
-    # Find the model with the lowest BIC
-    optimal_n_clusters_index = np.argmin(bic_scores)
-    optimal_n_clusters = n_components_range[optimal_n_clusters_index]
-    best_gmm = models[optimal_n_clusters_index]
-    print(f"Optimal number of clusters based on BIC: {optimal_n_clusters}")
+        print(f"Testing cluster numbers from 2 to {max_clusters}...")
+        for n_components in n_components_range:
+            gmm = GaussianMixture(n_components=n_components, 
+                                  covariance_type='full', 
+                                  random_state=42,
+                                  n_init=10)
+            gmm.fit(scaled_features)
+            models.append(gmm)
+            bic_scores.append(gmm.bic(scaled_features))
+            print(f"  Clusters: {n_components}, BIC: {bic_scores[-1]:.2f}")
+
+        # Find the model with the lowest BIC
+        if not bic_scores: # Handle case where max_clusters < 2
+             raise ValueError("max_clusters must be at least 2 to use BIC method.")
+        optimal_n_clusters_index = np.argmin(bic_scores)
+        optimal_n_clusters = n_components_range[optimal_n_clusters_index]
+        best_gmm = models[optimal_n_clusters_index]
+        print(f"Optimal number of clusters based on BIC: {optimal_n_clusters}")
 
     # Get results from the best model
     labels = best_gmm.predict(scaled_features)
     probabilities = best_gmm.predict_proba(scaled_features)
     confidence = np.max(probabilities, axis=1)
     
+    # Return BIC scores and range only if calculated
     return labels, probabilities, confidence, scaled_features, best_gmm, optimal_n_clusters, bic_scores, n_components_range
 
 def visualize_elbow_plot(bic_scores, n_components_range, optimal_n_clusters, output_dir='output'):
@@ -394,7 +409,7 @@ def save_results(paragraphs, labels, confidence, probabilities, ambiguous_sectio
         df_transitions.to_csv(os.path.join(output_dir, 'narrator_transitions.csv'), index=False)
 
 def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
-                           transitions, optimal_n_clusters, output_dir='output'):
+                           transitions, n_clusters, was_bic_used, output_dir='output'):
     """Generate a summary report of findings"""
     total_paragraphs = len(paragraphs)
     ambiguous_count = len(ambiguous_sections)
@@ -406,11 +421,14 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
     with open(os.path.join(output_dir, 'summary_report.txt'), 'w') as f:
         f.write("=== NARRATOR ANALYSIS SUMMARY ===\n\n")
         f.write(f"Total paragraphs analyzed: {total_paragraphs}\n")
-        f.write(f"Optimal number of narrators (determined by BIC): {optimal_n_clusters}\n")
+        if was_bic_used:
+            f.write(f"Optimal number of narrators (determined by BIC): {n_clusters}\n")
+        else:
+            f.write(f"Specified number of narrators: {n_clusters}\n")
         f.write(f"Average narrator confidence: {avg_confidence:.2f}\n\n")
         
         f.write("Narrator distribution:\n")
-        for narrator in range(optimal_n_clusters):
+        for narrator in range(n_clusters):
             count = narrator_distribution.get(narrator, 0)
             percentage = (count / total_paragraphs) * 100 if total_paragraphs > 0 else 0
             f.write(f"  Narrator {narrator}: {count} paragraphs ({percentage:.1f}%)\n")
@@ -499,7 +517,8 @@ def main():
         
     parser = argparse.ArgumentParser(description='Analyze narrators in a text using unsupervised learning.')
     parser.add_argument('--input', '-i', type=str, required=True, help='Path to the input text file')
-    parser.add_argument('--max-clusters', '-mc', type=int, default=10, help='Maximum number of clusters to test for BIC elbow method')
+    parser.add_argument('--clusters', '-c', type=int, default=None, help='Specify the exact number of narrator clusters (overrides BIC method)')
+    parser.add_argument('--max-clusters', '-mc', type=int, default=10, help='Maximum number of clusters to test for BIC elbow method (used if --clusters is not set)')
     parser.add_argument('--threshold', '-t', type=float, default=0.7, 
                         help='Confidence threshold for ambiguous narrator detection')
     parser.add_argument('--output', '-o', type=str, default='output', 
@@ -522,11 +541,26 @@ def main():
     print("Extracting stylometric features...")
     features, feature_names = extract_features(paragraphs)
     
-    print("Clustering paragraphs and determining optimal cluster count...")
-    labels, probabilities, confidence, scaled_features, model, optimal_n_clusters, bic_scores, n_components_range = cluster_paragraphs(features, args.max_clusters)
+    if args.clusters:
+        print(f"Clustering paragraphs into specified {args.clusters} clusters...")
+        was_bic_used = False
+    else:
+        print("Clustering paragraphs and determining optimal cluster count via BIC...")
+        was_bic_used = True
+        
+    labels, probabilities, confidence, scaled_features, model, n_clusters, bic_scores, n_components_range = cluster_paragraphs(features, args.max_clusters, args.clusters)
     
-    print("Visualizing BIC elbow plot...")
-    visualize_elbow_plot(bic_scores, n_components_range, optimal_n_clusters, args.output)
+    if was_bic_used and bic_scores is not None:
+        print("Visualizing BIC elbow plot...")
+        visualize_elbow_plot(bic_scores, n_components_range, n_clusters, args.output)
+    elif not was_bic_used:
+        elbow_plot_path = os.path.join(args.output, 'elbow_plot_bic.png')
+        if os.path.exists(elbow_plot_path):
+            try:
+                os.remove(elbow_plot_path)
+                print(f"Removed previous elbow plot: {elbow_plot_path}")
+            except OSError as e:
+                print(f"Error removing previous elbow plot: {e}")
 
     print("Finding ambiguous narrator sections...")
     ambiguous_sections = find_ambiguous_sections(paragraphs, labels, confidence, 
@@ -545,7 +579,7 @@ def main():
     
     print("Generating summary report...")
     generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
-                           transitions, optimal_n_clusters, args.output)
+                           transitions, n_clusters, was_bic_used, args.output)
     
     print("Saving detailed results...")
     save_results(paragraphs, labels, confidence, probabilities, 
@@ -555,7 +589,8 @@ def main():
     generate_example_sentences(paragraphs, labels, confidence, n_examples=10, output_dir=args.output)
     
     print("\nAnalysis complete! Check the output files in the", args.output, "directory:")
-    print("- elbow_plot_bic.png: BIC scores used to determine the optimal number of narrators")
+    if was_bic_used:
+        print("- elbow_plot_bic.png: BIC scores used to determine the optimal number of narrators")
     print("- narrator_clusters.png: Visual representation of narrator clusters")
     print("- narrator_timeline.png: Narrator transitions throughout the text")
     print("- confidence_distribution.png: Distribution of confidence scores by narrator")
