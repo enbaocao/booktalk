@@ -15,19 +15,25 @@ import pandas as pd
 import seaborn as sns
 
 # Check and download required NLTK resources
-try:
-    # Check for the main punkt resource needed by sent_tokenize
-    nltk.data.find('tokenizers/punkt')
-    print("NLTK punkt resource found.")
-except LookupError:
-    print("Downloading NLTK punkt resources...")
-    nltk.download('punkt', quiet=True)
-    # Verify download
+def download_nltk_resource(resource_id, resource_name):
     try:
-        nltk.data.find('tokenizers/punkt')
-        print("NLTK punkt resource downloaded successfully.")
+        nltk.data.find(f'tokenizers/{resource_id}')
+        print(f"NLTK '{resource_name}' resource found.")
     except LookupError:
-        print("Error: Failed to download or locate NLTK punkt resource after download attempt.")
+        print(f"NLTK '{resource_name}' resource not found. Downloading...")
+        nltk.download(resource_name, quiet=True)
+        # Re-check after download attempt
+        try:
+            nltk.data.find(f'tokenizers/{resource_id}')
+            print(f"NLTK '{resource_name}' resource downloaded successfully.")
+        except LookupError:
+            print(f"Error: Failed to download or locate NLTK '{resource_name}' resource.")
+            print("Please check your internet connection or NLTK setup.")
+            sys.exit(1) # Exit if essential resource is missing
+
+# Download both punkt and punkt_tab
+download_nltk_resource('punkt', 'punkt')
+download_nltk_resource('punkt_tab', 'punkt_tab') # Re-added explicit punkt_tab download
 
 try:
     nlp = spacy.load('en_core_web_sm')
