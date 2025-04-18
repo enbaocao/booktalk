@@ -1,0 +1,49 @@
+=== NARRATOR ANALYSIS SUMMARY ===
+
+Total sentences analyzed: 4627
+Number of identified narrators: 4
+Average narrator confidence: 1.00
+
+Narrator distribution:
+  Narrator 0: 164 sentences (3.5%)
+  Narrator 1: 433 sentences (9.4%)
+  Narrator 2: 3993 sentences (86.3%)
+  Narrator 3: 37 sentences (0.8%)
+
+Ambiguous narrator sections: 1 (0.0%)
+Narrator transitions: 1009
+
+=== TOP AMBIGUOUS SECTIONS ===
+
+Ambiguous Section 1 (Confidence: 0.52):
+  Paragraph Index: 647
+  Assigned Narrator: 1
+  Text: “Hello, Eliot ....
+
+=== KEY NARRATOR TRANSITIONS ===
+
+Transition 1 (Confidence After: 0.52):
+  Position: Paragraph 647
+  From Narrator 2 to Narrator 1
+  Confidence Before: 1.00
+
+Transition 2 (Confidence After: 0.84):
+  Position: Paragraph 3669
+  From Narrator 2 to Narrator 0
+  Confidence Before: 1.00
+
+Transition 3 (Confidence After: 0.87):
+  Position: Paragraph 4606
+  From Narrator 2 to Narrator 1
+  Confidence Before: 1.00
+
+Transition 4 (Confidence After: 0.88):
+  Position: Paragraph 3103
+  From Narrator 2 to Narrator 1
+  Confidence Before: 1.00
+
+Transition 5 (Confidence After: 0.90):
+  Position: Paragraph 1823
+  From Narrator 2 to Narrator 1
+  Confidence Before: 1.00
+
