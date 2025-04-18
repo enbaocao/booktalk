@@ -16,16 +16,18 @@ import seaborn as sns
 
 # Check and download required NLTK resources
 try:
+    # Check for the main punkt resource needed by sent_tokenize
     nltk.data.find('tokenizers/punkt')
+    print("NLTK punkt resource found.")
 except LookupError:
     print("Downloading NLTK punkt resources...")
     nltk.download('punkt', quiet=True)
-
-try:
-    nltk.data.find('tokenizers/punkt_tab')
-except LookupError:
-    print("Downloading NLTK punkt_tab resources...")
-    nltk.download('punkt_tab', quiet=True)
+    # Verify download
+    try:
+        nltk.data.find('tokenizers/punkt')
+        print("NLTK punkt resource downloaded successfully.")
+    except LookupError:
+        print("Error: Failed to download or locate NLTK punkt resource after download attempt.")
 
 try:
     nlp = spacy.load('en_core_web_sm')
