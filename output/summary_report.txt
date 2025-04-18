@@ -1,70 +1,57 @@
 === NARRATOR ANALYSIS SUMMARY ===
 
 Total paragraphs analyzed: 1568
-Specified number of narrators: 5
-Average narrator confidence: 0.99
+Optimal number of narrators (determined by BIC): 7
+Average narrator confidence: 1.00
 
 Narrator distribution:
-  Narrator 0: 25 paragraphs (1.6%)
-  Narrator 1: 1022 paragraphs (65.2%)
-  Narrator 2: 351 paragraphs (22.4%)
-  Narrator 3: 27 paragraphs (1.7%)
-  Narrator 4: 143 paragraphs (9.1%)
+  Narrator 0: 584 paragraphs (37.2%)
+  Narrator 1: 484 paragraphs (30.9%)
+  Narrator 2: 68 paragraphs (4.3%)
+  Narrator 3: 226 paragraphs (14.4%)
+  Narrator 4: 42 paragraphs (2.7%)
+  Narrator 5: 148 paragraphs (9.4%)
+  Narrator 6: 16 paragraphs (1.0%)
 
-Ambiguous narrator sections: 11 (0.7%)
-Narrator transitions: 800
+Ambiguous narrator sections: 2 (0.1%)
+Narrator transitions: 1017
 
 === TOP AMBIGUOUS SECTIONS ===
 
-Ambiguous Section 1 (Confidence: 0.50):
-  Paragraph Index: 1192
+Ambiguous Section 1 (Confidence: 0.53):
+  Paragraph Index: 1550
   Assigned Narrator: 4
-  Text: Eliot read aloud from Luc’s manuscript. The project, it seemed, had changed, from a book themed around seasonality to a cookbook for reluctant eaters. She recognised meals she’d pretended to like and ...
+  Text: I ask this because of her shoes. They keep filling with a substance that’s only identifiable to one side of my brain. The other side will only say no to it. I first noticed it the night I slept in Mir...
 
-Ambiguous Section 2 (Confidence: 0.52):
-  Paragraph Index: 1085
-  Assigned Narrator: 1
-  Text: She took a deep breath and rested her chin on her hand. “I have a theory,” she said. I nodded at her to continue and she said, “There’s this fireplace downstairs. I think I went down there for some re...
-
-Ambiguous Section 3 (Confidence: 0.55):
-  Paragraph Index: 662
-  Assigned Narrator: 1
-  Text: Monday was the day I got the letter from the South African production company, offering me their internship. The acceptance sank my heart. My Dad knows magazine people who wrote me glowing, if vague, ...
-
-Ambiguous Section 4 (Confidence: 0.61):
-  Paragraph Index: 1165
-  Assigned Narrator: 2
-  Text: Last night had been the fifth, perhaps the sixth night that Miranda had lain by Ore, smelling her, running her nose over the other girl’s body, turning the beginning of a bite into a kiss whenever Ore...
-
-Ambiguous Section 5 (Confidence: 0.61):
-  Paragraph Index: 176
-  Assigned Narrator: 2
-  Text: When she tried on the last dress in the pile he’d built up, she was sure he would like it. He had to. It didn’t look like anything she already had, the skirt flared wonderfully, and there was the swee...
+Ambiguous Section 2 (Confidence: 0.68):
+  Paragraph Index: 68
+  Assigned Narrator: 3
+  Text: is not tall. He is pale and the sun fails on his skin. He used to write restaurant reviews, plying a thesaurus for other facets to the words “juicy” and “rich.” He met Lily at a magazine Christmas par...
 
 === KEY NARRATOR TRANSITIONS ===
 
-Transition 1 (Confidence After: 0.50):
-  Position: Paragraph 1192
-  From Narrator 1 to Narrator 4
+Transition 1 (Confidence After: 0.53):
+  Position: Paragraph 1550
+  From Narrator 3 to Narrator 4
   Confidence Before: 1.00
 
-Transition 2 (Confidence After: 0.61):
-  Position: Paragraph 176
-  From Narrator 4 to Narrator 2
+Transition 2 (Confidence After: 0.68):
+  Position: Paragraph 68
+  From Narrator 5 to Narrator 3
   Confidence Before: 1.00
 
-Transition 3 (Confidence After: 0.62):
-  Position: Paragraph 422
-  From Narrator 1 to Narrator 4
+Transition 3 (Confidence After: 0.78):
+  Position: Paragraph 361
+  From Narrator 3 to Narrator 0
   Confidence Before: 1.00
 
-Transition 4 (Confidence After: 0.67):
-  Position: Paragraph 85
-  From Narrator 4 to Narrator 2
+Transition 4 (Confidence After: 0.91):
+  Position: Paragraph 1250
+  From Narrator 0 to Narrator 3
   Confidence Before: 1.00
 
-Transition 5 (Confidence After: 0.68):
-  Position: Paragraph 1214
-  From Narrator 1 to Narrator 2
+Transition 5 (Confidence After: 0.92):
+  Position: Paragraph 476
+  From Narrator 0 to Narrator 4
   Confidence Before: 1.00
 

@@ -1,62 +1,86 @@
 === EXAMPLE SENTENCES FOR EACH NARRATOR ===
 
 --- Narrator 0 ---
-  (Conf: 1.00, Para: 12) She shook her head and dropped to the disappointed hiss of a primary-school teacher, or a kid trying to borrow the authority of one: “Bad!
-  (Conf: 1.00, Para: 60) In the morning Miri was still sitting up, her arms stiff on the bedspread before her, gone so deep into sleep that she seemed part of the wall behind her, a girl-shaped texture rising from the plaster in an un-repeated pattern.
-  (Conf: 1.00, Para: 60) Her lips were pinched, her forehead lined with effort.
-  (Conf: 1.00, Para: 60) I think in her dreams she was listing things.
-  (Conf: 1.00, Para: 60) She tumbled awake and blurted, “Lily can’t stand Pachelbel’s Canon!” I would have laughed if she hadn’t said it with such terror.
-  (Conf: 1.00, Para: 241) “Eliot!” she said through the gap.
-  (Conf: 1.00, Para: 287) You must have the hardest head in all creation,” the girl said.
-  (Conf: 1.00, Para: 296) I can’t be bothered.”
-  (Conf: 1.00, Para: 304) “Indeed!” the girl said.
-  (Conf: 1.00, Para: 304) what’s your name?”
+  (Conf: 1.00, Para: 7) Does she remember me at all I miss her I miss the way her eyes are the same shade of grey no matter the strength or weakness of the light I miss the taste of her I see her in my sleep, a star planted seed-deep, her arms outstretched, her fists clenched, her black dress clinging to her like mud.
+  (Conf: 1.00, Para: 29) me I will not allow her to live
+  (Conf: 1.00, Para: 50) Shrill singing between my ears.
+  (Conf: 1.00, Para: 108) So I have done you good
+  (Conf: 1.00, Para: 1126) Neither did I send the messages to Miri that said: Can you help me, I do miss her, you are the only one who knows where to find her, I think you talk to each other when I can’t hear.
+  (Conf: 1.00, Para: 1221) Abbie was eleven and kept saying that everything was “so weird,” We had rare roast beef and potatoes because none of us really liked turkey, and Abbie said, “It’s so weird to be having beef for Christmas dinner.” She also said, “It’s so weird not to have the fairy on top of the tree this year,” and “If you think about it, gravy is so weird.”
+  (Conf: 1.00, Para: 1222) Sean’s and Adam’s dogs chased each other around the room—Sean and Adam said that the dogs weren’t allowed to have names, so when they were in earshot we just identified them by colour—the black one was Sean’s and the brown one was Adam’s.
+  (Conf: 1.00, Para: 1249) Tijana had told me about a good half hour spent on a bench in Dover’s main square while some old black guy had explained to her that refugees were a drain on the resources provided by the taxpayer, so I don’t know exactly what I thought Dover would be.
+  (Conf: 1.00, Para: 1435) I pressed the lift button to go down
+  (Conf: 1.00, Para: 1500) I am going down against her
 
 --- Narrator 1 ---
+  (Conf: 1.00, Para: 0) Miranda Silver is in Dover, in the ground beneath her mother’s house.
+  (Conf: 1.00, Para: 1) Her throat is blocked with a slice of apple
+  (Conf: 1.00, Para: 2) (to stop her speaking words that may betray her)
   (Conf: 1.00, Para: 3) her ears are filled with earth
+  (Conf: 1.00, Para: 4) (to keep her from hearing sounds that will confuse her)
+  (Conf: 1.00, Para: 5) her eyes are closed, but
   (Conf: 1.00, Para: 6) her heart thrums hard like hummingbird wings.
-  (Conf: 1.00, Para: 50) Shrill singing between my ears.
-  (Conf: 1.00, Para: 67) But black wells only yield black water.
-  (Conf: 1.00, Para: 108) So I have done you good
-  (Conf: 1.00, Para: 207) They wouldn’t answer after
-  (Conf: 1.00, Para: 450) and the trees thrashing to save their roots
-  (Conf: 1.00, Para: 910) she’s an affected little goose
-  (Conf: 1.00, Para: 1046) Courage, cabbage, cuttage, cottage.
-  (Conf: 1.00, Para: 1337) black liquid, as dense as paint
+  (Conf: 1.00, Para: 8) She chose this as the only way to fight the soucouyant.
+  (Conf: 1.00, Para: 19) Miranda can’t come in today Miranda has a condition called pica she has
+  (Conf: 1.00, Para: 21) very ill—Miranda has pica she can’t come in today, she is stretched out
 
 --- Narrator 2 ---
-  (Conf: 1.00, Para: 30) WHAT HAPPENED TO LILY SILVER?
-  (Conf: 1.00, Para: 45) “What do you mean?”
-  (Conf: 1.00, Para: 48) “We need more than that.
-  (Conf: 1.00, Para: 48) What else do we know?
-  (Conf: 1.00, Para: 48) What else is real about her?”
-  (Conf: 1.00, Para: 65) Why do people go to these places, these places that are not for them?
-  (Conf: 1.00, Para: 101) (let you out from where?
-  (Conf: 1.00, Para: 117) She said, “You’re applying to Cambridge?”
-  (Conf: 1.00, Para: 122) She said plaintively, “Is it too late to apply?”
-  (Conf: 1.00, Para: 136) “Because they’re even more hostile to the police than they are to each other?
-
---- Narrator 3 ---
-  (Conf: 1.00, Para: 441) The lift from the ground floor to the first floor, then from first to second, second to third, then from the third floor to the empty attic.
-  (Conf: 1.00, Para: 441) She peered up and down the broad passageways and tiptoed past the bedroom doors, feeling like dust, as if she was everywhere at once.
-  (Conf: 1.00, Para: 441) She could pull herself tight and then explode and choke everyone in the house.
-  (Conf: 1.00, Para: 441) She had never breathed so well or seen so clearly.
-  (Conf: 1.00, Para: 441) She could hear one person snoring with the tidy rumble of an engine.
-  (Conf: 1.00, Para: 441) In another room, someone murmured to herself or into the phone.
-  (Conf: 1.00, Para: 441) Next door to that person a couple quietly crushed each other with sighs and words and their bodies.
-  (Conf: 1.00, Para: 441) The fifth and biggest guest room was unoccupied, so nothing from there.
-  (Conf: 1.00, Para: 441) A scream came to her, the word “Fire!” but she did not let it leave her, and she didn’t ring an alarm.
-  (Conf: 1.00, Para: 441) How dare people sleep, how dare they lie so blankly in the dark?
-
---- Narrator 4 ---
-  (Conf: 1.00, Para: 13) (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
   (Conf: 1.00, Para: 62) The twins were sixteen and a half when their mother died.
   (Conf: 1.00, Para: 62) She was shot in Port-au-Prince; gunfire sprayed into the queue at a voting station.
   (Conf: 1.00, Para: 62) Her camera remained intact throughout.
   (Conf: 1.00, Para: 62) Also, the lens was unstained.
   (Conf: 1.00, Para: 62) To protect it from dust and flies, Lily had covered it with a square of checked cloth and an elastic band, rustic jam-jar style.
-  (Conf: 1.00, Para: 64) Stupid, stupid; Lily had been warned not to go to Haiti.
-  (Conf: 1.00, Para: 70) His fingers are ruined by too close and careless contact with heat; the parts that touch each other when the hand is held out straight and flat, the skin there is stretched, speckled and shiny.
-  (Conf: 1.00, Para: 70) Lily had never seen such hands.
-  (Conf: 1.00, Para: 70) To her they seemed the most wonderful in all the world.
+  (Conf: 1.00, Para: 63) That day two bullets were for her; they found her and leapt into her lung.
+  (Conf: 1.00, Para: 63) She fell amidst milling feet.
+  (Conf: 1.00, Para: 63) Someone leant against her and pushed her aside, outside, out of life.
+  (Conf: 1.00, Para: 63) She pushed back, sweat standing out on her skin in droplets as if she had been rained on.
+  (Conf: 1.00, Para: 63) But her opponent had great wings, lined with clouds of feathers that brushed her, cooled her, pricked her.
+
+--- Narrator 3 ---
+  (Conf: 1.00, Para: 10) “Why did you use the winter apples?” She asked it over and over.
+  (Conf: 1.00, Para: 10) Nothing I replied could break her monotone.
+  (Conf: 1.00, Para: 46) “Quick, we’ve got to remember her.
+  (Conf: 1.00, Para: 46) What can you remember?”
+  (Conf: 1.00, Para: 48) “We need more than that.
+  (Conf: 1.00, Para: 48) What else do we know?
+  (Conf: 1.00, Para: 48) What else is real about her?”
+  (Conf: 1.00, Para: 71) One night she said to him, “I love you, do you love me?” She said it as lightly as such a thing can be said without it being a joke.
+  (Conf: 1.00, Para: 71) Immediately he replied, “Yes I love you, and you are beautiful,” pronouncing his words with a hint of impatience because they had been waiting in him a long time.
+  (Conf: 1.00, Para: 77) If I was going on a trip or something it was a simple matter of handing him a letter or an itinerary and saying, “Dad, it’s £300,” or whatever it was.
+
+--- Narrator 4 ---
+  (Conf: 1.00, Para: 60) In the morning Miri was still sitting up, her arms stiff on the bedspread before her, gone so deep into sleep that she seemed part of the wall behind her, a girl-shaped texture rising from the plaster in an un-repeated pattern.
+  (Conf: 1.00, Para: 60) Her lips were pinched, her forehead lined with effort.
+  (Conf: 1.00, Para: 60) I think in her dreams she was listing things.
+  (Conf: 1.00, Para: 60) She tumbled awake and blurted, “Lily can’t stand Pachelbel’s Canon!” I would have laughed if she hadn’t said it with such terror.
+  (Conf: 1.00, Para: 354) “Okay,” I said, and got myself some water.
+  (Conf: 1.00, Para: 354) I went back to bed but couldn’t sleep anymore.
+  (Conf: 1.00, Para: 354) I was lying on a hardback biography of T. S. Eliot, but that wasn’t the reason.
+  (Conf: 1.00, Para: 354) After about half an hour I sat up again, and Lily was in the rocking chair by the window, Lily smiling with glad eyes as if she had something funny to tell me.
+  (Conf: 1.00, Para: 354) Lily in the chair, I mean Miranda was, Miri in a black T-shirt that scraped the tops of her thighs, Miri holding the rockers still with her bare feet.
+  (Conf: 1.00, Para: 354) When I jumped, she laughed.
+
+--- Narrator 5 ---
+  (Conf: 1.00, Para: 18) (homesick, home sick)
+  (Conf: 1.00, Para: 20) eaten a great deal of chalk—she really can’t help herself—she has been
+  (Conf: 1.00, Para: 30) WHAT HAPPENED TO LILY SILVER?
+  (Conf: 1.00, Para: 37) Miri said, “You’re scared about Lily.”
+  (Conf: 1.00, Para: 52) There is no such thing, Miri.
+  (Conf: 1.00, Para: 54) “Don’t say that.
+  (Conf: 1.00, Para: 54) There is such a thing.”
+  (Conf: 1.00, Para: 57) “Come on, don’t be a baby.
+  (Conf: 1.00, Para: 67) But black wells only yield black water.
+  (Conf: 1.00, Para: 101) (let you out from where?
+
+--- Narrator 6 ---
+  (Conf: 1.00, Para: 12) She shook her head and dropped to the disappointed hiss of a primary-school teacher, or a kid trying to borrow the authority of one: “Bad!
+  (Conf: 1.00, Para: 241) “Eliot!” she said through the gap.
+  (Conf: 1.00, Para: 287) You must have the hardest head in all creation,” the girl said.
+  (Conf: 1.00, Para: 296) I can’t be bothered.”
+  (Conf: 1.00, Para: 431) “Hello!” he called, before he even reached the sitting room this time.
+  (Conf: 1.00, Para: 432) “Hello!” they all called back.
+  (Conf: 1.00, Para: 534) “A priest,” said Eliot, “would not say anything constructive to someone who was scared of death.
+  (Conf: 1.00, Para: 534) A priest would say ‘Death is great!
+  (Conf: 1.00, Para: 534) You get to go to heaven!’ ”
+  (Conf: 1.00, Para: 572) “It’s Friday!” he said.
 
