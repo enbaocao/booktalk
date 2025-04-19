@@ -1,0 +1,503 @@
+=== TOP 100 MOST UNCERTAIN SENTENCES ===
+(Sorted by lowest confidence score)
+
+Confidence: 0.5518
+Assigned Narrator: 5
+Paragraph Index: 1329
+Sentence: “Sade, I want to ask you something,” I said.
+
+Confidence: 0.5518
+Assigned Narrator: 5
+Paragraph Index: 1329
+Sentence: “If you say yes, I’ll believe you.
+
+Confidence: 0.5518
+Assigned Narrator: 5
+Paragraph Index: 1329
+Sentence: Just tell me.
+
+Confidence: 0.5518
+Assigned Narrator: 5
+Paragraph Index: 1329
+Sentence: There’s something wrong with this house, isn’t there?”
+
+Confidence: 0.8201
+Assigned Narrator: 5
+Paragraph Index: 618
+Sentence: “Oh that was me,” Sade said.
+
+Confidence: 0.8201
+Assigned Narrator: 5
+Paragraph Index: 618
+Sentence: “I was cooking last night and I didn’t want to wake everyone up so I switched the thingie off just to make sure.”
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: After breakfast, Sylvie and Dad stayed in and baked, and Miri and I went out for a walk along the Seine with The Paul.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: I took the bird with us, holding my jacket slightly open for the bird, which I felt shuddering slightly in the inside pocket, a brittle shape with life in it, like a flute playing itself.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: The Paul was in between Miri and me, and Miri supported him by coquettishly slipping her arm through his.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: Her high heels slipped on the ice.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: This happened a lot, but she refused to go out without her heels so she’d adapted to it, fully bending her knees each time she slipped so that she staggered with elegance.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: The trees were laced with ice and only a few other people were out.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: When they passed us, they gave friendly nods.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: I made observations aloud, for the bird’s benefit.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: “Lovely weather,” I said, and “Fit girl,” I told the bird, when one walked past.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: I also said, “I hope you don’t shit in my pocket.” The bird raised its beak and its eyes like wet black marbles, and it seemed to listen to me.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: Either that or it was trying to get a feeling for the sky and when it might fly again.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: The Paul said sympathetically, “Poor boy.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: Your old grandparents have bored you eccentric.
+
+Confidence: 0.8888
+Assigned Narrator: 2
+Paragraph Index: 360
+Sentence: A fellow’s got to amuse himself.”
+
+Confidence: 0.9093
+Assigned Narrator: 5
+Paragraph Index: 620
+Sentence: I nodded to show that I understood, stuffed my letters into my back pocket and left the kitchen.
+
+Confidence: 0.9093
+Assigned Narrator: 5
+Paragraph Index: 620
+Sentence: I had an interview in London to get to.
+
+Confidence: 0.9093
+Assigned Narrator: 5
+Paragraph Index: 620
+Sentence: Sade called me back.
+
+Confidence: 0.9330
+Assigned Narrator: 2
+Paragraph Index: 739
+Sentence: “First I will knit you a scarf, as I’ve read that South Africa won’t really get warm for you until November.
+
+Confidence: 0.9330
+Assigned Narrator: 2
+Paragraph Index: 739
+Sentence: Next I think I will make myself an overcoat, with a violently coloured lining.”
+
+Confidence: 0.9384
+Assigned Narrator: 5
+Paragraph Index: 798
+Sentence: “I cut my hair and lost some weight—which I’ll put back on, really I will—that’s all.”
+
+Confidence: 0.9406
+Assigned Narrator: 0
+Paragraph Index: 1125
+Sentence: Neither did I send the messages to Miri that said: Can you help me, I do miss her, you are the only one who knows where to find her, I think you talk to each other when I can’t hear.
+
+Confidence: 0.9530
+Assigned Narrator: 5
+Paragraph Index: 1076
+Sentence: I felt every vein in me move closer to the surface of my skin, all veins plucked in one direction as if I was a stringed instrument.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: After my lecture that afternoon I phoned home.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: I called to see if I missed home more than for any other reason.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: My mum answered, and I knew I did.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: It was like being kicked in the chest.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: That first term—every term, in fact—I was constantly negotiating reprieve from execution.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Everything, every essay, every conversation, even casual ones in the bar, seemed so final.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Everything rested on being right, or at least insisting that I was not incorrect.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: I was taking the whole thing too seriously.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Or I was taking steps to blindfold myself so that when I came out of the door of my college room this morning I didn’t see the glass windows glaring at me out of the fourteenth-century walls.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Walls and windows forbade me.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: They pulled at me and said, You don’t belong here.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Again and again, over textbooks and plates of mush in hall, I gritted my teeth and said, Yes I do.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Everyone else seemed to blend into the architecture.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: Even Tijana had already lost her perturbed look.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: My mum wanted to know whether I’d met my future husband yet, and my dad wanted to know if I’d met any snobs, whether I’d run into anyone who was “being funny” with me.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: I said no.
+
+Confidence: 0.9698
+Assigned Narrator: 6
+Paragraph Index: 917
+Sentence: I wondered what he would have said if I’d told him yes.
+
+Confidence: 0.9803
+Assigned Narrator: 2
+Paragraph Index: 1219
+Sentence: We had a crowd at Christmas dinner, because Mum insisted that everyone come over even though there wasn’t that much room.
+
+Confidence: 0.9803
+Assigned Narrator: 2
+Paragraph Index: 1219
+Sentence: Me, Dad, Mum, aunts and uncles (three of the former and two of the latter), and my cousins, Melanie, Sean, Adam and Abbie.
+
+Confidence: 0.9818
+Assigned Narrator: 0
+Paragraph Index: 938
+Sentence: “Would you like some tea?” she asked.
+
+Confidence: 0.9818
+Assigned Narrator: 0
+Paragraph Index: 938
+Sentence: I had to be honest; I don’t like tea.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: “It looks lovely,” I said.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: I added “sir,” in case I was supposed to call him “sir” and also because he reminded me of a teacher I’d had.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: I was careful not to let any food or water touch my lips—I tilted my glass and swallowed air, I lifted the fork to my mouth, spoke and rearranged the forkful of food on my plate whilst speaking.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: I wiped my mouth with a napkin, left red smudges on it, stared and tried to reason the colour away.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: Was my lip torn?
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: Surreptitiously I lay a finger across my bottom lip; the skin was whole, but there was more red on my fingertip.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: After about five minutes I remembered what this was: lipstick.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: Miranda’s lipstick, the imprint of her kisses on my lips.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: And there we all were, Miranda, her father, her brother and I, sharing oxygen around a dinner table.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: I scrubbed at my lips as hard as I could without it looking pathological.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: I don’t know what kind of lipstick Miranda wore but it just wouldn’t come off.
+
+Confidence: 0.9953
+Assigned Narrator: 6
+Paragraph Index: 1344
+Sentence: At best the smudges on the napkin lightened in shade until they were a decayed pink.
+
+Confidence: 0.9953
+Assigned Narrator: 5
+Paragraph Index: 1491
+Sentence: “That stupid thing I said before Lily died.
+
+Confidence: 0.9953
+Assigned Narrator: 5
+Paragraph Index: 1491
+Sentence: I don’t think you’ll ever forgive me.
+
+Confidence: 0.9953
+Assigned Narrator: 5
+Paragraph Index: 1491
+Sentence: Will you.”
+
+Confidence: 0.9963
+Assigned Narrator: 2
+Paragraph Index: 1450
+Sentence: “I don’t want to come out.
+
+Confidence: 0.9963
+Assigned Narrator: 2
+Paragraph Index: 1450
+Sentence: Put me back in,” the girl insisted.
+
+Confidence: 0.9963
+Assigned Narrator: 2
+Paragraph Index: 1450
+Sentence: I can’t .
+
+Confidence: 0.9968
+Assigned Narrator: 0
+Paragraph Index: 80
+Sentence: Miri and I were ten; Dad spent some time with a big map, planning a scenic route, and then he drove the moving van himself.
+
+Confidence: 0.9968
+Assigned Narrator: 0
+Paragraph Index: 80
+Sentence: Miri and I fidgeted at first, then settled when we saw cliffs bruising the skyline and smelt birds and wet salt on the air.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: I’d written to lots of media training schemes and independent film companies trying to get a placement for the summer, for the majority of my year out, if possible.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: I didn’t particularly want to travel; there was nowhere I wanted to go.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: But I couldn’t stay.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: So I’d applied to things in as many different places as possible and hoped that ultimately wherever I had to go, it would be because of work.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: As long as English was spoken there, wherever it was, I’d go.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: One morning a couple of weeks into the new year I got lots of letters back and sat on the staircase, shuffling through them, looking for something encouraging.
+
+Confidence: 0.9974
+Assigned Narrator: 6
+Paragraph Index: 602
+Sentence: Most of them were “no”s.
+
+Confidence: 0.9979
+Assigned Narrator: 5
+Paragraph Index: 1417
+Sentence: “Of course,” I said, shivering.
+
+Confidence: 0.9979
+Assigned Narrator: 5
+Paragraph Index: 1417
+Sentence: If either of us smoked cigarettes we’d have been warmer in some small way.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: She felt fine, but she began to feel followed.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: When she passed through the back gate of her college, it took an age until she heard the gate close behind her.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: But as she turned the corner into New Court, no one else came through the arch.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: Clare College had prettier grounds than her college, and she took big detours so that she could pass through them on her way to and from supervisions, fanning herself with a rolled-up essay and catching falling leaves in the skirt of her coat.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: And there came moments when she knew that there was someone behind her, remaining out of sight by taking one step for every five that she took.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: Other people moved past her over the bridge between the gardens; they carried books and bags and musical instruments, they were on their way to places.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: But not the person she felt hovering up in the air behind her, doubling the path she’d walked from Ore’s room to her supervision, or from her supervision to hall.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: She paid attention to the sense of surveillance because it seemed unconnected to the night.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: She never felt followed at night, and that made this feeling she had less likely to be paranoia.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: She was afraid.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: Afraid that she was imagining the surveillance, afraid that it was real.
+
+Confidence: 0.9981
+Assigned Narrator: 6
+Paragraph Index: 1056
+Sentence: When she entered a room she tried to look at everyone in it individually, trying to catch the person who had just been looking at her.
+
+Confidence: 0.9986
+Assigned Narrator: 2
+Paragraph Index: 366
+Sentence: I spoke even though my lips felt frozen.
+
+Confidence: 0.9986
+Assigned Narrator: 2
+Paragraph Index: 366
+Sentence: Not really frozen, actually.
+
+Confidence: 0.9986
+Assigned Narrator: 2
+Paragraph Index: 366
+Sentence: My lips couldn’t be bothered to form words.
+
+Confidence: 0.9986
+Assigned Narrator: 2
+Paragraph Index: 366
+Sentence: “Come on,” I said.
+
+Confidence: 0.9986
+Assigned Narrator: 2
+Paragraph Index: 366
+Sentence: “We applied to the same college for the same subject.”
+
+Confidence: 0.9990
+Assigned Narrator: 2
+Paragraph Index: 850
+Sentence: The game was to flip penny coins into each other’s wineglasses.
+
+Confidence: 0.9990
+Assigned Narrator: 2
+Paragraph Index: 850
+Sentence: If you found a penny in your wine, then you had to drain the glass in one go.
+
+Confidence: 0.9990
+Assigned Narrator: 2
+Paragraph Index: 850
+Sentence: I listened in on what the guy was saying to Tijana, and I looked up and down the table (boys outnumbered girls by about three to one) and thought it was a cheap trick for getting girls drunk.
+
+Confidence: 0.9990
+Assigned Narrator: 2
+Paragraph Index: 850
+Sentence: But there was more.
+
+Confidence: 0.9990
+Assigned Narrator: 2
+Paragraph Index: 850
+Sentence: The guy explained that the rules were the same if a penny piece was dropped onto your dinner plate—if you were “up for it” then you ate the food on it as quickly as you could, and with your hands behind your back.
+

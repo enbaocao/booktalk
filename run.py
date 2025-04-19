@@ -493,6 +493,47 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
             
     print(f"Saved example sentences to {output_path}")
 
+def generate_uncertain_sentences(paragraphs, labels, confidence, n_examples=100, output_dir='output'):
+    """Generate a file listing the most uncertain sentences based on cluster confidence."""
+    all_sentences_with_confidence = []
+
+    # Iterate through paragraphs and their confidence scores
+    for i, paragraph in enumerate(paragraphs):
+        conf = confidence[i]
+        label = labels[i]
+        sentences = sent_tokenize(paragraph)
+        
+        # Assign the paragraph's confidence to each sentence within it
+        for sentence in sentences:
+            # Store sentence, confidence, paragraph index, and assigned label
+            if len(word_tokenize(sentence)) > 3: # Basic filter for very short/fragmented sentences
+                all_sentences_with_confidence.append({
+                    'sentence': sentence,
+                    'confidence': conf,
+                    'paragraph_index': i,
+                    'assigned_narrator': label
+                })
+
+    # Sort all sentences by confidence (ascending - least confident first)
+    sorted_sentences = sorted(all_sentences_with_confidence, key=lambda x: x['confidence'])
+
+    # Select the top N most uncertain sentences
+    uncertain_examples = sorted_sentences[:n_examples]
+
+    # Write to file
+    output_path = os.path.join(output_dir, 'uncertain_sentences.txt')
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(f"=== TOP {n_examples} MOST UNCERTAIN SENTENCES ===\n")
+        f.write("(Sorted by lowest confidence score)\n\n")
+        
+        for example in uncertain_examples:
+            f.write(f"Confidence: {example['confidence']:.4f}\n")
+            f.write(f"Assigned Narrator: {example['assigned_narrator']}\n")
+            f.write(f"Paragraph Index: {example['paragraph_index']}\n")
+            f.write(f"Sentence: {example['sentence']}\n\n")
+            
+    print(f"Saved {len(uncertain_examples)} most uncertain sentences to {output_path}")
+
 def check_dependencies():
     """Check if all required dependencies are installed"""
     required_packages = ['spacy', 'nltk', 'sklearn', 'pandas', 'matplotlib', 'seaborn']
@@ -587,6 +628,9 @@ def main():
 
     print("Generating example sentences for each narrator...")
     generate_example_sentences(paragraphs, labels, confidence, n_examples=10, output_dir=args.output)
+
+    print("Generating list of most uncertain sentences...")
+    generate_uncertain_sentences(paragraphs, labels, confidence, n_examples=100, output_dir=args.output)
     
     print("\nAnalysis complete! Check the output files in the", args.output, "directory:")
     if was_bic_used:
@@ -600,6 +644,7 @@ def main():
     print("- ambiguous_narrators.csv: Paragraphs with ambiguous narrator assignment")
     print("- narrator_transitions.csv: Transitions between narrators")
     print("- narrator_examples.txt: Example sentences for each narrator")
+    print("- uncertain_sentences.txt: The 100 sentences with the lowest confidence scores")
 
 if __name__ == "__main__":
     main()

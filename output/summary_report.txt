@@ -1,57 +1,52 @@
 === NARRATOR ANALYSIS SUMMARY ===
 
-Total paragraphs analyzed: 1568
-Optimal number of narrators (determined by BIC): 7
+Total paragraphs analyzed: 1567
+Specified number of narrators: 7
 Average narrator confidence: 1.00
 
 Narrator distribution:
-  Narrator 0: 584 paragraphs (37.2%)
-  Narrator 1: 484 paragraphs (30.9%)
-  Narrator 2: 68 paragraphs (4.3%)
-  Narrator 3: 226 paragraphs (14.4%)
-  Narrator 4: 42 paragraphs (2.7%)
-  Narrator 5: 148 paragraphs (9.4%)
-  Narrator 6: 16 paragraphs (1.0%)
+  Narrator 0: 36 paragraphs (2.3%)
+  Narrator 1: 489 paragraphs (31.2%)
+  Narrator 2: 600 paragraphs (38.3%)
+  Narrator 3: 102 paragraphs (6.5%)
+  Narrator 4: 16 paragraphs (1.0%)
+  Narrator 5: 295 paragraphs (18.8%)
+  Narrator 6: 29 paragraphs (1.9%)
 
-Ambiguous narrator sections: 2 (0.1%)
-Narrator transitions: 1017
+Ambiguous narrator sections: 1 (0.1%)
+Narrator transitions: 978
 
 === TOP AMBIGUOUS SECTIONS ===
 
-Ambiguous Section 1 (Confidence: 0.53):
-  Paragraph Index: 1550
-  Assigned Narrator: 4
-  Text: I ask this because of her shoes. They keep filling with a substance that’s only identifiable to one side of my brain. The other side will only say no to it. I first noticed it the night I slept in Mir...
-
-Ambiguous Section 2 (Confidence: 0.68):
-  Paragraph Index: 68
-  Assigned Narrator: 3
-  Text: is not tall. He is pale and the sun fails on his skin. He used to write restaurant reviews, plying a thesaurus for other facets to the words “juicy” and “rich.” He met Lily at a magazine Christmas par...
+Ambiguous Section 1 (Confidence: 0.55):
+  Paragraph Index: 1329
+  Assigned Narrator: 5
+  Text: “Sade, I want to ask you something,” I said. “If you say yes, I’ll believe you. Just tell me. There’s something wrong with this house, isn’t there?”...
 
 === KEY NARRATOR TRANSITIONS ===
 
-Transition 1 (Confidence After: 0.53):
-  Position: Paragraph 1550
-  From Narrator 3 to Narrator 4
+Transition 1 (Confidence After: 0.82):
+  Position: Paragraph 618
+  From Narrator 3 to Narrator 5
   Confidence Before: 1.00
 
-Transition 2 (Confidence After: 0.68):
-  Position: Paragraph 68
-  From Narrator 5 to Narrator 3
+Transition 2 (Confidence After: 0.89):
+  Position: Paragraph 360
+  From Narrator 3 to Narrator 2
   Confidence Before: 1.00
 
-Transition 3 (Confidence After: 0.78):
-  Position: Paragraph 361
-  From Narrator 3 to Narrator 0
+Transition 3 (Confidence After: 0.91):
+  Position: Paragraph 620
+  From Narrator 1 to Narrator 5
   Confidence Before: 1.00
 
-Transition 4 (Confidence After: 0.91):
-  Position: Paragraph 1250
-  From Narrator 0 to Narrator 3
+Transition 4 (Confidence After: 0.93):
+  Position: Paragraph 739
+  From Narrator 1 to Narrator 2
   Confidence Before: 1.00
 
-Transition 5 (Confidence After: 0.92):
-  Position: Paragraph 476
-  From Narrator 0 to Narrator 4
+Transition 5 (Confidence After: 0.94):
+  Position: Paragraph 1125
+  From Narrator 6 to Narrator 0
   Confidence Before: 1.00
 

@@ -1,0 +1,61 @@
+# Context for run.py - Narrator Analysis Script
+
+**Purpose:**
+
+This Python script (`run.py`) analyzes a given text file to identify distinct narrative styles or "narrators" within the text. It uses techniques from stylometry (the statistical analysis of literary style) and unsupervised machine learning (specifically Gaussian Mixture Models) to group paragraphs based on their writing characteristics.
+
+**Workflow:**
+
+1.  **Input:** Takes a plain text file as input (specified using the `--input` argument).
+2.  **Preprocessing:**
+    *   Loads the text.
+    *   Splits the text into paragraphs (defined by double line breaks).
+    *   Filters out very short paragraphs.
+3.  **Feature Extraction:** For each paragraph, it calculates a variety of stylometric features, including:
+    *   Average sentence length
+    *   Lexical diversity (type-token ratio)
+    *   Word count
+    *   Pronoun usage ratios (total, third-person, third-vs-first)
+    *   Presence/absence of first-person pronouns
+    *   Part-of-speech tag percentages (nouns, verbs, adjectives, etc.) using spaCy
+    *   Average word length
+    *   Punctuation density and specific punctuation ratios (questions, exclamations, semicolons)
+4.  **Clustering:**
+    *   Standardizes the extracted features.
+    *   Uses a Gaussian Mixture Model (GMM) to cluster the paragraphs based on their feature vectors.
+    *   **Cluster Number Determination:**
+        *   By default, it tests a range of cluster numbers (2 to `--max-clusters`, default 10) and selects the number that yields the best (lowest) Bayesian Information Criterion (BIC) score. An "elbow plot" of BIC scores is generated (`elbow_plot_bic.png`).
+        *   Alternatively, the user can force a specific number of clusters using the `--clusters` argument, which overrides the BIC method.
+5.  **Analysis & Output:**
+    *   Assigns each paragraph to a narrator cluster.
+    *   Calculates the confidence score for each assignment.
+    *   Identifies paragraphs and sentences with low confidence scores (ambiguous sections/uncertain sentences).
+    *   Analyzes transitions between narrators.
+    *   Generates various output files in the specified output directory (`--output`, default is `output/`):
+        *   `narrator_analysis_results.csv`: Detailed assignment and probabilities for each paragraph.
+        *   `summary_report.txt`: High-level summary of findings.
+        *   `narrator_examples.txt`: High-confidence example sentences for each identified narrator.
+        *   `uncertain_sentences.txt`: Sentences with the lowest confidence scores.
+        *   `ambiguous_narrators.csv`: Paragraphs below the confidence threshold.
+        *   `narrator_transitions.csv`: Points where the assigned narrator changes.
+        *   `*.png`: Various plots visualizing the clusters, timeline, confidence, feature importance, and BIC scores.
+
+**Key Dependencies:**
+
+*   `nltk`: For tokenization (words, sentences). Requires 'punkt' and 'punkt_tab' data.
+*   `spacy`: For part-of-speech tagging. Requires 'en_core_web_sm' model.
+*   `scikit-learn`: For `StandardScaler`, `GaussianMixture`, `TSNE`.
+*   `pandas`: For data manipulation and CSV output.
+*   `numpy`: For numerical operations.
+*   `matplotlib` & `seaborn`: For plotting.
+
+**Basic Usage:**
+
+```bash
+python run.py --input your_text_file.txt [--clusters N | --max-clusters M] [--output output_directory]
+```
+
+*   Replace `your_text_file.txt` with the path to your input.
+*   Optionally use `--clusters N` to specify exactly `N` narrators.
+*   Optionally use `--max-clusters M` to change the upper limit for BIC testing (default 10).
+*   Optionally use `--output` to specify a different output folder.
