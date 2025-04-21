@@ -2,6 +2,7 @@ import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup
 import os
+import re
 
 def epub_to_text(epub_path, output_text_path):
     """
@@ -32,7 +33,14 @@ def epub_to_text(epub_path, output_text_path):
             for paragraph in paragraphs:
                 # Get clean text from paragraph
                 text = paragraph.get_text().strip()
-                if text:  # Only add non-empty paragraphs
+                
+                # Check conditions: non-empty, no quotes (standard or non-standard), not a list item
+                contains_quotes = '"' in text or "'" in text or '“' in text or '”' in text
+                # Simple check for common list markers (adjust regex as needed)
+                # Added • to the list of markers
+                is_list_item = re.match(r'^\s*([*\-•+]|\d+\.|[a-zA-Z][.)])\s+', text)
+                
+                if text and not contains_quotes and not is_list_item:
                     all_paragraphs.append(text)
     
     # Write all paragraphs to the output file
