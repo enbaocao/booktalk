@@ -1,49 +1,50 @@
 === NARRATOR ANALYSIS SUMMARY ===
 
-Total paragraphs analyzed: 717
-Optimal number of narrators (determined by BIC): 9
+Total paragraphs analyzed: 688
+Optimal number of narrators (determined by BIC): 10
 Average narrator confidence: 1.00
 
 Narrator distribution:
-  Narrator 0: 16 paragraphs (2.2%)
-  Narrator 1: 263 paragraphs (36.7%)
-  Narrator 2: 32 paragraphs (4.5%)
-  Narrator 3: 56 paragraphs (7.8%)
-  Narrator 4: 65 paragraphs (9.1%)
-  Narrator 5: 205 paragraphs (28.6%)
-  Narrator 6: 22 paragraphs (3.1%)
-  Narrator 7: 28 paragraphs (3.9%)
-  Narrator 8: 30 paragraphs (4.2%)
+  Narrator 0: 254 paragraphs (36.9%)
+  Narrator 1: 190 paragraphs (27.6%)
+  Narrator 2: 16 paragraphs (2.3%)
+  Narrator 3: 14 paragraphs (2.0%)
+  Narrator 4: 76 paragraphs (11.0%)
+  Narrator 5: 4 paragraphs (0.6%)
+  Narrator 6: 14 paragraphs (2.0%)
+  Narrator 7: 53 paragraphs (7.7%)
+  Narrator 8: 13 paragraphs (1.9%)
+  Narrator 9: 54 paragraphs (7.8%)
 
 Ambiguous narrator sections: 0 (0.0%)
-Narrator transitions: 424
+Narrator transitions: 393
 
 === TOP AMBIGUOUS SECTIONS ===
 
 === KEY NARRATOR TRANSITIONS ===
 
-Transition 1 (Confidence After: 0.90):
-  Position: Paragraph 657
-  From Narrator 5 to Narrator 4
+Transition 1 (Confidence After: 0.88):
+  Position: Paragraph 662
+  From Narrator 1 to Narrator 7
   Confidence Before: 1.00
 
-Transition 2 (Confidence After: 0.90):
-  Position: Paragraph 581
-  From Narrator 5 to Narrator 4
+Transition 2 (Confidence After: 0.97):
+  Position: Paragraph 250
+  From Narrator 2 to Narrator 0
   Confidence Before: 1.00
 
-Transition 3 (Confidence After: 0.95):
-  Position: Paragraph 710
-  From Narrator 2 to Narrator 4
+Transition 3 (Confidence After: 0.99):
+  Position: Paragraph 509
+  From Narrator 7 to Narrator 0
   Confidence Before: 1.00
 
-Transition 4 (Confidence After: 0.95):
-  Position: Paragraph 344
-  From Narrator 1 to Narrator 8
+Transition 4 (Confidence After: 1.00):
+  Position: Paragraph 380
+  From Narrator 1 to Narrator 0
   Confidence Before: 1.00
 
-Transition 5 (Confidence After: 0.96):
-  Position: Paragraph 610
-  From Narrator 5 to Narrator 4
+Transition 5 (Confidence After: 1.00):
+  Position: Paragraph 631
+  From Narrator 1 to Narrator 4
   Confidence Before: 1.00
 

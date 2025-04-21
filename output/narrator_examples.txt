@@ -1,110 +1,122 @@
 === EXAMPLE SENTENCES FOR EACH NARRATOR ===
 
 --- Narrator 0 ---
-  (Conf: 1.00, Para: 165) The perfect person was a girl.
-  (Conf: 1.00, Para: 165) Bobbed dark hair, black dress, pearls she was too young for, mouth, nose and chin familiar .
-  (Conf: 1.00, Para: 165) Miranda’s, almost.
-  (Conf: 1.00, Para: 165) Look, look, remember.
-  (Conf: 1.00, Para: 165) This sight might not come again.
-  (Conf: 1.00, Para: 165) The perfect person had beautifully shaped hands, but no fingernails.
-  (Conf: 1.00, Para: 165) A swanlike neck that met the jaw at a devastating but impossible angle.
-  (Conf: 1.00, Para: 165) Before Lily died, Miranda’s hair had been long enough to sit on.
-  (Conf: 1.00, Para: 165) Me after the clinic, but perfect.
-  (Conf: 1.00, Para: 165) Miranda turned the picture over and ran her hand over the back of it; in one, yes, two, three, four places the paper was rougher, once adhesive, now matted with fine hairs and specks of dust.
+  (Conf: 1.00, Para: 0) Miranda Silver is in Dover, in the ground beneath her mother’s house.
+  (Conf: 1.00, Para: 1) Her throat is blocked with a slice of apple
+  (Conf: 1.00, Para: 2) (to stop her speaking words that may betray her)
+  (Conf: 1.00, Para: 3) her ears are filled with earth
+  (Conf: 1.00, Para: 4) (to keep her from hearing sounds that will confuse her)
+  (Conf: 1.00, Para: 5) her eyes are closed, but
+  (Conf: 1.00, Para: 6) her heart thrums hard like hummingbird wings.
+  (Conf: 1.00, Para: 8) She chose this as the only way to fight the soucouyant.
+  (Conf: 1.00, Para: 16) Miranda can’t come in today Miranda has a condition called pica she has
+  (Conf: 1.00, Para: 18) very ill—Miranda has pica she can’t come in today, she is stretched out
 
 --- Narrator 1 ---
-  (Conf: 1.00, Para: 24) Miranda Silver is in Dover, in the ground beneath her mother’s house.
-  (Conf: 1.00, Para: 25) Her throat is blocked with a slice of apple
-  (Conf: 1.00, Para: 26) (to stop her speaking words that may betray her)
-  (Conf: 1.00, Para: 27) her ears are filled with earth
-  (Conf: 1.00, Para: 28) (to keep her from hearing sounds that will confuse her)
-  (Conf: 1.00, Para: 29) her eyes are closed, but
-  (Conf: 1.00, Para: 30) her heart thrums hard like hummingbird wings.
-  (Conf: 1.00, Para: 32) She chose this as the only way to fight the soucouyant.
-  (Conf: 1.00, Para: 40) Miranda can’t come in today Miranda has a condition called pica she has
-  (Conf: 1.00, Para: 42) very ill—Miranda has pica she can’t come in today, she is stretched out
+  (Conf: 1.00, Para: 14) A part of me knows that we can’t find her because something has happened to her.
+  (Conf: 1.00, Para: 21) I know she’s not there.
+  (Conf: 1.00, Para: 23) I dropped the words onto the paper so hard that they’re doubled by the thin perforations around them.
+  (Conf: 1.00, Para: 24) I wouldn’t have bothered trying to tell her, I wouldn’t have written to her if
+  (Conf: 1.00, Para: 26) me I will not allow her to live
+  (Conf: 1.00, Para: 30) I leaned my back against her desk, wrapped blankets around my shoulders and tried to read with a flashlight.
+  (Conf: 1.00, Para: 114) Emma put her arms around my neck and tried to make me slow dance.
+  (Conf: 1.00, Para: 119) I put the scissors down, but she picked them up and tried to force them back into my hand.
+  (Conf: 1.00, Para: 320) Tijana didn’t even open her mouth.
+  (Conf: 1.00, Para: 320) She just rolled her eyes at me.
 
 --- Narrator 2 ---
-  (Conf: 1.00, Para: 3) Penguin Group (Canada), 90 Eglinton Avenue East, Suite 700, Toronto, Ontario, Canada M4P 2Y3(a division of Pearson Canada Inc.)
-  (Conf: 1.00, Para: 5) Penguin Books Ltd, Registered Offices: 80 Strand, London WC2R 0RL, England
-  (Conf: 1.00, Para: 7) 1  2  3  4  5  6  7  8  9  10   (RRD)
-  (Conf: 1.00, Para: 8) Copyright © Helen Oyeyemi, 2009
-  (Conf: 1.00, Para: 12) LIBRARY AND ARCHIVES CANADA CATALOGUING IN PUBLICATION
-  (Conf: 1.00, Para: 13) Oyeyemi, HelenWhite is for witching / Helen Oyeyemi.
-  (Conf: 1.00, Para: 15) PR6115.Y49W47 2009   823’.92   C2009-902103-X
-  (Conf: 1.00, Para: 16) American Library of Congress Cataloging in Publication data availableBritish Library Cataloguing in Publication data available
-  (Conf: 1.00, Para: 18) Special and corporate bulk purchase rates available; please seewww.penguin.ca/corporatesales or call 1-800-810-3104, ext.
-  (Conf: 1.00, Para: 39) (homesick, home sick)
+  (Conf: 1.00, Para: 139) The perfect person was a girl.
+  (Conf: 1.00, Para: 139) Bobbed dark hair, black dress, pearls she was too young for, mouth, nose and chin familiar .
+  (Conf: 1.00, Para: 139) Miranda’s, almost.
+  (Conf: 1.00, Para: 139) Look, look, remember.
+  (Conf: 1.00, Para: 139) This sight might not come again.
+  (Conf: 1.00, Para: 139) The perfect person had beautifully shaped hands, but no fingernails.
+  (Conf: 1.00, Para: 139) A swanlike neck that met the jaw at a devastating but impossible angle.
+  (Conf: 1.00, Para: 139) Before Lily died, Miranda’s hair had been long enough to sit on.
+  (Conf: 1.00, Para: 139) Me after the clinic, but perfect.
+  (Conf: 1.00, Para: 139) Miranda turned the picture over and ran her hand over the back of it; in one, yes, two, three, four places the paper was rougher, once adhesive, now matted with fine hairs and specks of dust.
 
 --- Narrator 3 ---
-  (Conf: 1.00, Para: 4) Penguin Group (USA) Inc., 375 Hudson Street, New York, New York 10014, U.S.A.Penguin Books Ltd, 80 Strand, London WC2R 0RL, EnglandPenguin Ireland, 25 St Stephen’s Green, Dublin 2, Ireland (a division of Penguin Books Ltd)Penguin Group (Australia), 250 Camberwell Road, Camberwell, Victoria 3124, Australia(a division of Pearson Australia Group Pty Ltd)Penguin Books India Pvt Ltd, 11 Community Centre, Panchsheel Park, New Delhi – 110 017, IndiaPenguin Group (NZ), 67 Apollo Drive, Rosedale, North Shore 0745, Auckland, New Zealand(a division of Pearson New Zealand Ltd)Penguin Books (South Africa) (Pty) Ltd, 24 Sturdee Avenue, Rosebank,Johannesburg 2196, South Africa
-  (Conf: 1.00, Para: 6) Published in Canada by Penguin Group (Canada), a division of Pearson Canada Inc., 2009.Simultaneously published in the United States by Nan A. Talese,an imprint of The Doubleday Publishing Group, a division of Random House, Inc., New York,and in Great Britain by Picador, London, under the title Pie-kah.
-  (Conf: 1.00, Para: 63) The twins were sixteen and a half when their mother died.
-  (Conf: 1.00, Para: 63) She was shot in Port-au-Prince; gunfire sprayed into the queue at a voting station.
-  (Conf: 1.00, Para: 63) Her camera remained intact throughout.
-  (Conf: 1.00, Para: 63) Also, the lens was unstained.
-  (Conf: 1.00, Para: 63) To protect it from dust and flies, Lily had covered it with a square of checked cloth and an elastic band, rustic jam-jar style.
-  (Conf: 1.00, Para: 64) That day two bullets were for her; they found her and leapt into her lung.
-  (Conf: 1.00, Para: 64) She fell amidst milling feet.
-  (Conf: 1.00, Para: 64) Someone leant against her and pushed her aside, outside, out of life.
+  (Conf: 1.00, Para: 7) Does she remember me at all I miss her I miss the way her eyes are the same shade of grey no matter the strength or weakness of the light I miss the taste of her I see her in my sleep, a star planted seed-deep, her arms outstretched, her fists clenched, her black dress clinging to her like mud.
+  (Conf: 1.00, Para: 97) They moved with increasing disheartenment from shop to shop, hands in their coat pockets, looking at the floor more than they looked at the clothes, and finally, knowing that her only condition was that her dresses be black, he swiftly selected dresses off the racks for her to try, with the reasoning that he was more likely to approve an outfit if he’d chosen it.
+  (Conf: 1.00, Para: 126) She tried to follow him in, but he suddenly and silently pushed the door against her until she squealed with pain; the pressure of the door between them threatened to throw her arm out of its socket.
+  (Conf: 1.00, Para: 346) An influx of new guests in search of the perfect beach-to-town balanced holiday meant that Sade couldn’t help Miranda with her knitting for another three days, and it was four days before Miranda saw Eliot for longer than the time it took for him to stumble indoors in the early morning, toss food into his mouth, go to bed, then, in the late afternoon, rise from his bed, toss food into his mouth and leave the house again.
+  (Conf: 1.00, Para: 421) she’s an affected little goose
+  (Conf: 1.00, Para: 457) Already Ore had nearly finished the chips; Miranda stopped and gave her a reproachful look while she made up for the time she’d lost talking.
+  (Conf: 1.00, Para: 544) Sean’s and Adam’s dogs chased each other around the room—Sean and Adam said that the dogs weren’t allowed to have names, so when they were in earshot we just identified them by colour—the black one was Sean’s and the brown one was Adam’s.
+  (Conf: 1.00, Para: 551) Tijana had told me about a good half hour spent on a bench in Dover’s main square while some old black guy had explained to her that refugees were a drain on the resources provided by the taxpayer, so I don’t know exactly what I thought Dover would be.
+  (Conf: 1.00, Para: 565) He reached across and went through the whole jazzy handshake thing again; I was better at it the second time.
+  (Conf: 1.00, Para: 570) She produced it from the pocket of her cardigan; it was bound in plastic, and inside the pages were as crisp as if she had only just received it.
 
 --- Narrator 4 ---
-  (Conf: 1.00, Para: 9) Without limiting the rights under copyright reserved above, no part of this publication may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording or otherwise), without the prior written permission of both the copyright owner and the above publisher of this book.
-  (Conf: 1.00, Para: 10) Publisher’s note: This book is a work of fiction.
-  (Conf: 1.00, Para: 10) Names, characters, places and incidents either are the product of the author’s imagination or are used fictitiously, and any resemblance to actual persons living or dead, events, or locales is entirely coincidental.
-  (Conf: 1.00, Para: 17) Visit the Penguin Group (Canada) website at www.penguin.ca
-  (Conf: 1.00, Para: 41) eaten a great deal of chalk—she really can’t help herself—she has been
-  (Conf: 1.00, Para: 51) WHAT HAPPENED TO LILY SILVER?
-  (Conf: 1.00, Para: 87) (let you out from where?
-  (Conf: 1.00, Para: 125) (Father, let’s go to the doll hospital and get you repaired)
-  (Conf: 1.00, Para: 162) (How excellent a body, that
-  (Conf: 1.00, Para: 175) The girl looked at the watch on Miranda’s wrist.
+  (Conf: 1.00, Para: 15) (homesick, home sick)
+  (Conf: 1.00, Para: 17) eaten a great deal of chalk—she really can’t help herself—she has been
+  (Conf: 1.00, Para: 43) But black wells only yield black water.
+  (Conf: 1.00, Para: 100) (Father, let’s go to the doll hospital and get you repaired)
+  (Conf: 1.00, Para: 108) Luc lightly touched Miranda’s shoulder.
+  (Conf: 1.00, Para: 112) Miranda went to see if Deme and Suryaz were alright.
+  (Conf: 1.00, Para: 136) (How excellent a body, that
+  (Conf: 1.00, Para: 149) The girl looked at the watch on Miranda’s wrist.
+  (Conf: 1.00, Para: 150) The girl’s hands were shaking.
+  (Conf: 1.00, Para: 150) Miranda tried not to stare.
 
 --- Narrator 5 ---
-  (Conf: 1.00, Para: 19) I hold my honey and I store my bread
-  (Conf: 1.00, Para: 38) A part of me knows that we can’t find her because something has happened to her.
-  (Conf: 1.00, Para: 45) I know she’s not there.
-  (Conf: 1.00, Para: 46) But I wrote, Miri I’m lonely.
-  (Conf: 1.00, Para: 47) I dropped the words onto the paper so hard that they’re doubled by the thin perforations around them.
-  (Conf: 1.00, Para: 48) I wouldn’t have bothered trying to tell her, I wouldn’t have written to her if
-  (Conf: 1.00, Para: 50) me I will not allow her to live
-  (Conf: 1.00, Para: 55) I leaned my back against her desk, wrapped blankets around my shoulders and tried to read with a flashlight.
-  (Conf: 1.00, Para: 56) I didn’t answer.
-  (Conf: 1.00, Para: 56) I tried to picture our mother in Haiti and I saw her in a tower built of guns, heaving with voodoo, creepy gods and white feathers tipped with blood.
+  (Conf: 1.00, Para: 166) This house is bigger than you know!
+  (Conf: 1.00, Para: 166) There are extra floors, with lots of people on them.
+  (Conf: 1.00, Para: 166) They look at you, and they never move.
+  (Conf: 1.00, Para: 166) We do not like them.
+  (Conf: 1.00, Para: 166) We do not like this house, and we are glad to be going away.
+  (Conf: 1.00, Para: 291) Emma texted me: Jean de Bergieres—they searched for her in the oven(!)
+  (Conf: 1.00, Para: 291) and found her in the attic .
+  (Conf: 1.00, Para: 395) She bit at the white side—she bit!
+  (Conf: 1.00, Para: 395) In my distraction I lost hold of the other black guests, the couple on the second floor who I had kept in their bed the past three days, curved around the bed like fitted sheets with their faces crusting over.
+  (Conf: 1.00, Para: 395) The African with the silent chest chewed, swallowed and opened her mouth for more, while the couple picked up their cases and fled, leaving money on the hallway desk as payment for their stay.
 
 --- Narrator 6 ---
-  (Conf: 1.00, Para: 34) (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
-  (Conf: 1.00, Para: 65) Stupid, stupid; Lily had been warned not to go to Haiti.
-  (Conf: 1.00, Para: 76) but ended up choking on a puff of dust that bolted down the chimney.
-  (Conf: 1.00, Para: 76) Next Lily showed us the little ration-book larder behind the kitchen; the shelves were wonky and the room had a floor so crazily checked that none of us could walk in a straight line in there.
-  (Conf: 1.00, Para: 76) I remember how brilliant I thought it all was; there was nothing for it but to jump in the air and yell and kick and make kung-fu noises.
-  (Conf: 1.00, Para: 81) There is another shelter inside the house.
-  (Conf: 1.00, Para: 81) It is beneath the sitting room with the fireplace; it is under a trapdoor set in the floor.
-  (Conf: 1.00, Para: 81) The room is dim and long and deep; a room for sleeping in.
-  (Conf: 1.00, Para: 81) Sleeping and not much else.
-  (Conf: 1.00, Para: 81) I tried to revise for exams in there and ended up curled up on my side on the floor, snoring.
+  (Conf: 1.00, Para: 87) Still, Lily seemed to gaze and gaze at her and say, Oh, Miri.
+  (Conf: 1.00, Para: 104) Was his cue written on the walls?
+  (Conf: 1.00, Para: 292) I texted back: And what did they do when they found her?
+  (Conf: 1.00, Para: 333) Sade seemed to laugh; at least, her shoulders shook.
+  (Conf: 1.00, Para: 370) Miranda was on the point of saying that she might need to go away again.
+  (Conf: 1.00, Para: 370) Only she wasn’t sure what good it would do.
+  (Conf: 1.00, Para: 370) Hadn’t it begun while she was away?
+  (Conf: 1.00, Para: 465) (did she mean to fall headfirst?)
+  (Conf: 1.00, Para: 293) Her: Raped her—seven of them.
+  (Conf: 1.00, Para: 485) He was standing in New Court with another guy who looked just like him, laughing from only one side of his mouth.
 
 --- Narrator 7 ---
-  (Conf: 1.00, Para: 31) Does she remember me at all I miss her I miss the way her eyes are the same shade of grey no matter the strength or weakness of the light I miss the taste of her I see her in my sleep, a star planted seed-deep, her arms outstretched, her fists clenched, her black dress clinging to her like mud.
-  (Conf: 1.00, Para: 82) What took getting used to in Dover were the gulls and their croaky sobs, and the sense of climbing upstairs when walking on some roads and downstairs when walking on others.
-  (Conf: 1.00, Para: 82) The house, the garden, moving.
-  (Conf: 1.00, Para: 82) The whole thing was like a dream; for weeks Miri and I couldn’t believe it and wandered around the place with pangs in our stomachs, pre-emptive homesickness ready for the time when Dad and Lily would announce it was only a holiday and it was time to leave.
-  (Conf: 1.00, Para: 82) Aside from our great-grandmother dying, we knew that it was Dad that had made it all happen, and we revered him as a wizard.
-  (Conf: 1.00, Para: 192) This house is bigger than you know!
-  (Conf: 1.00, Para: 192) There are extra floors, with lots of people on them.
-  (Conf: 1.00, Para: 192) They look at you, and they never move.
-  (Conf: 1.00, Para: 192) We do not like them.
-  (Conf: 1.00, Para: 192) We do not like this house, and we are glad to be going away.
+  (Conf: 1.00, Para: 38) The twins were sixteen and a half when their mother died.
+  (Conf: 1.00, Para: 38) She was shot in Port-au-Prince; gunfire sprayed into the queue at a voting station.
+  (Conf: 1.00, Para: 38) Her camera remained intact throughout.
+  (Conf: 1.00, Para: 38) Also, the lens was unstained.
+  (Conf: 1.00, Para: 38) To protect it from dust and flies, Lily had covered it with a square of checked cloth and an elastic band, rustic jam-jar style.
+  (Conf: 1.00, Para: 39) That day two bullets were for her; they found her and leapt into her lung.
+  (Conf: 1.00, Para: 39) She fell amidst milling feet.
+  (Conf: 1.00, Para: 39) Someone leant against her and pushed her aside, outside, out of life.
+  (Conf: 1.00, Para: 39) She pushed back, sweat standing out on her skin in droplets as if she had been rained on.
+  (Conf: 1.00, Para: 39) But her opponent had great wings, lined with clouds of feathers that brushed her, cooled her, pricked her.
 
 --- Narrator 8 ---
-  (Conf: 1.00, Para: 66) Why do people go to these places, these places that are not for them?
-  (Conf: 1.00, Para: 112) Still, Lily seemed to gaze and gaze at her and say, Oh, Miri.
-  (Conf: 1.00, Para: 129) Was his cue written on the walls?
-  (Conf: 1.00, Para: 200) Miri was like a mini-Sylvie, but she hadn’t always been.
-  (Conf: 1.00, Para: 200) I can’t remember when she stopped wearing jeans and jumpers and skirts and started with the black and the severe outlines (why did she start?)
-  (Conf: 1.00, Para: 200) but I do remember Lily finding the change hilarious for months, and I also remember being embarrassed to have to be seen outdoors with Miri until I realised that no one seemed to think that her dress sense was odd.
-  (Conf: 1.00, Para: 318) I texted back: And what did they do when they found her?
-  (Conf: 1.00, Para: 349) I wiped my face and went in for the next lesson.
-  (Conf: 1.00, Para: 349) The duty to speak when Miri couldn’t, to make sense when she didn’t.
-  (Conf: 1.00, Para: 349) I checked that no one was around, then put my forehead to my locker and stood against it just like a plank, with all my weight in my head.
+  (Conf: 1.00, Para: 41) Why do people go to these places, these places that are not for them?
+  (Conf: 1.00, Para: 62) (let you out from where?
+  (Conf: 1.00, Para: 188) Goodlady, are you really good?
+  (Conf: 1.00, Para: 189) Even when no one is looking?
+  (Conf: 1.00, Para: 190) But do you understand your nature?
+  (Conf: 1.00, Para: 191) Did you choose to be good, or were you so created?
+  (Conf: 1.00, Para: 193) Is that really an answer?
+  (Conf: 1.00, Para: 373) What was there to say?
+  (Conf: 1.00, Para: 462) What was the first word?
+  (Conf: 1.00, Para: 488) So what did I do while Miri fed her intellect amongst the greatest minds in the country?
+
+--- Narrator 9 ---
+  (Conf: 1.00, Para: 10) (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
+  (Conf: 1.00, Para: 32) Lily was the changer who came home the same.
+  (Conf: 1.00, Para: 32) But that last time the signs were bad.
+  (Conf: 1.00, Para: 32) When she left, she had forgotten her watch on the telephone stand in the hallway, a brass body with thin leather arms, ticking away Haitian time, six hours behind ours.
+  (Conf: 1.00, Para: 32) How could she have forgotten her watch?
+  (Conf: 1.00, Para: 32) Miri and I had debated leaving it where it was (that seemed luckier), then Miri had confiscated it for safekeeping in case one of the houseguests stole it or broke it or something.
+  (Conf: 1.00, Para: 40) Stupid, stupid; Lily had been warned not to go to Haiti.
+  (Conf: 1.00, Para: 49) Miri and I were ten; Dad spent some time with a big map, planning a scenic route, and then he drove the moving van himself.
+  (Conf: 1.00, Para: 49) Miri and I fidgeted at first, then settled when we saw cliffs bruising the skyline and smelt birds and wet salt on the air.
+  (Conf: 1.00, Para: 51) but ended up choking on a puff of dust that bolted down the chimney.
 
