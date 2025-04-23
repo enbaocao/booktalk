@@ -453,41 +453,59 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
             f.write(f"  Confidence Before: {trans['confidence_before']:.2f}\n\n")
 
 def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, min_confidence=0.9, output_dir='output'):
-    """Generate a file with example sentences for each narrator cluster."""
+    """Generate a file with example sentences for each narrator cluster, 
+       selecting randomly from high-confidence sentences for better spread."""
     narrator_sentences = {i: [] for i in np.unique(labels)}
     
+    # Collect all sentences meeting the minimum confidence threshold
     for i, paragraph in enumerate(paragraphs):
         label = labels[i]
         conf = confidence[i]
         
         if conf >= min_confidence:
             sentences = sent_tokenize(paragraph)
-            narrator_sentences[label].extend([(sent, conf, i) for sent in sentences])
+            # Store sentence, confidence, and paragraph index
+            narrator_sentences[label].extend([(sent, conf, i) for sent in sentences if len(word_tokenize(sent)) > 5]) # Basic length filter
 
     output_path = os.path.join(output_dir, 'narrator_examples.txt')
     with open(output_path, 'w', encoding='utf-8') as f:
-        f.write("=== EXAMPLE SENTENCES FOR EACH NARRATOR ===\n\n")
+        f.write("=== EXAMPLE SENTENCES FOR EACH NARRATOR ===\n")
+        f.write("(Randomly selected from sentences with confidence >= ")
+        f.write(f"{min_confidence})\n\n")
         
         for narrator in sorted(narrator_sentences.keys()):
             f.write(f"--- Narrator {narrator} ---\n")
             
-            sorted_sentences = sorted(narrator_sentences[narrator], key=lambda x: x[1], reverse=True)
+            high_conf_sentences = narrator_sentences[narrator]
             
+            # Randomly sample if more examples exist than needed, otherwise take all
+            if len(high_conf_sentences) > n_examples:
+                selected_examples = random.sample(high_conf_sentences, n_examples)
+            else:
+                selected_examples = high_conf_sentences
+            
+            # Sort the selected examples by paragraph index for readability in the output file
+            selected_examples.sort(key=lambda x: x[2]) 
+
             unique_sentences_added = set()
             examples_added = 0
             
-            for sentence, conf, p_idx in sorted_sentences:
-                if examples_added >= n_examples:
-                    break
-                if len(word_tokenize(sentence)) > 5 and sentence not in unique_sentences_added:
+            for sentence, conf, p_idx in selected_examples:
+                # Double check for uniqueness, although random.sample should handle it
+                if sentence not in unique_sentences_added:
                     f.write(f"  (Conf: {conf:.2f}, Para: {p_idx}) {sentence}\n")
                     unique_sentences_added.add(sentence)
                     examples_added += 1
             
             if examples_added == 0:
                  f.write("  (No high-confidence sentences found for this narrator)\n")
-            elif examples_added < n_examples:
-                 f.write(f"  (Only found {examples_added} high-confidence sentences)\n")
+            elif examples_added < n_examples and len(high_conf_sentences) >= examples_added:
+                 # Note if fewer examples were found than requested
+                 if len(high_conf_sentences) < n_examples:
+                     f.write(f"  (Only found {len(high_conf_sentences)} high-confidence sentences in total)\n")
+                 else:
+                     # This case might occur if random sample picked duplicates somehow, though unlikely
+                     f.write(f"  (Selected {examples_added} unique sentences)\n")
 
             f.write("\n")
             
@@ -582,27 +600,27 @@ def main():
     print("Extracting stylometric features...")
     features, feature_names = extract_features(paragraphs)
     
-    if args.clusters:
-        print(f"Clustering paragraphs into specified {args.clusters} clusters...")
-        was_bic_used = False
-    else:
-        print("Clustering paragraphs and determining optimal cluster count via BIC...")
-        was_bic_used = True
-        
-    labels, probabilities, confidence, scaled_features, model, n_clusters, bic_scores, n_components_range = cluster_paragraphs(features, args.max_clusters, args.clusters)
-    
-    if was_bic_used and bic_scores is not None:
+    print("Clustering paragraphs...")
+    # Pass command-line arguments to the clustering function
+    labels, probabilities, confidence, scaled_features, model, n_clusters, bic_scores, n_components_range = cluster_paragraphs(
+        features, 
+        n_clusters_override=args.clusters, # Use value from command line (or None)
+        max_clusters=args.max_clusters    # Use value from command line (or default)
+    )
+    print(f"Clustering complete. Using {n_clusters} clusters.")
+
+    # Determine if BIC was used (i.e., if clusters were not overridden)
+    was_bic_used = args.clusters is None
+
+    # Visualize elbow plot only if BIC was calculated
+    if was_bic_used and bic_scores is not None and n_components_range is not None:
         print("Visualizing BIC elbow plot...")
         visualize_elbow_plot(bic_scores, n_components_range, n_clusters, args.output)
     elif not was_bic_used:
-        elbow_plot_path = os.path.join(args.output, 'elbow_plot_bic.png')
-        if os.path.exists(elbow_plot_path):
-            try:
-                os.remove(elbow_plot_path)
-                print(f"Removed previous elbow plot: {elbow_plot_path}")
-            except OSError as e:
-                print(f"Error removing previous elbow plot: {e}")
-
+        print("Skipping BIC elbow plot visualization as cluster count was specified.")
+    else:
+        print("Skipping BIC elbow plot visualization (BIC scores not available).")
+    
     print("Finding ambiguous narrator sections...")
     ambiguous_sections = find_ambiguous_sections(paragraphs, labels, confidence, 
                                                 probabilities, args.threshold)
@@ -619,6 +637,7 @@ def main():
     analyze_feature_importance(model, feature_names, args.output)
     
     print("Generating summary report...")
+    # Pass the correct flag indicating if BIC was used
     generate_summary_report(paragraphs, labels, confidence, ambiguous_sections, 
                            transitions, n_clusters, was_bic_used, args.output)
     
@@ -633,8 +652,6 @@ def main():
     generate_uncertain_sentences(paragraphs, labels, confidence, n_examples=100, output_dir=args.output)
     
     print("\nAnalysis complete! Check the output files in the", args.output, "directory:")
-    if was_bic_used:
-        print("- elbow_plot_bic.png: BIC scores used to determine the optimal number of narrators")
     print("- narrator_clusters.png: Visual representation of narrator clusters")
     print("- narrator_timeline.png: Narrator transitions throughout the text")
     print("- confidence_distribution.png: Distribution of confidence scores by narrator")

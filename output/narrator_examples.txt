@@ -1,122 +1,63 @@
 === EXAMPLE SENTENCES FOR EACH NARRATOR ===
+(Randomly selected from sentences with confidence >= 0.9)
 
 --- Narrator 0 ---
-  (Conf: 1.00, Para: 56) Lily can’t stand Pachelbel’s Canon!
-  (Conf: 1.00, Para: 259) You must have the hardest head in all creation,
-  (Conf: 1.00, Para: 267) I can’t be bothered.
-  (Conf: 1.00, Para: 303) This house is bigger than you know!
-  (Conf: 1.00, Para: 303) There are extra floors, with lots of people on them.
-  (Conf: 1.00, Para: 303) They look at you, and they never move.
-  (Conf: 1.00, Para: 303) We do not like them.
-  (Conf: 1.00, Para: 303) We do not like this house, and we are glad to be going away.
-  (Conf: 1.00, Para: 467) I’m sorry I took your bike!
-  (Conf: 1.00, Para: 467) But I think it was fated.
+  (Conf: 1.00, Para: 112) Miranda went to see if Deme and Suryaz were alright.
+  (Conf: 1.00, Para: 150) The girl’s hands were shaking.
+  (Conf: 1.00, Para: 190) But do you understand your nature?
+  (Conf: 1.00, Para: 191) Did you choose to be good, or were you so created?
+  (Conf: 1.00, Para: 231) (Because plastic is not satisfying this night
+  (Conf: 1.00, Para: 279) Sade turned Miranda’s head away from the terrible face.
+  (Conf: 1.00, Para: 374) Miranda waited for more, but there wasn’t any more.
+  (Conf: 1.00, Para: 462) What was the first word?
+  (Conf: 1.00, Para: 488) So what did I do while Miri fed her intellect amongst the greatest minds in the country?
+  (Conf: 1.00, Para: 682) Once for no, twice for yes
 
 --- Narrator 1 ---
-  (Conf: 1.00, Para: 3) her ears are filled with earth
-  (Conf: 1.00, Para: 59) That day two bullets were for her; they found her and leapt into her lung.
-  (Conf: 1.00, Para: 59) She fell amidst milling feet.
-  (Conf: 1.00, Para: 59) Someone leant against her and pushed her aside, outside, out of life.
-  (Conf: 1.00, Para: 59) She pushed back, sweat standing out on her skin in droplets as if she had been rained on.
-  (Conf: 1.00, Para: 59) But her opponent had great wings, lined with clouds of feathers that brushed her, cooled her, pricked her.
-  (Conf: 1.00, Para: 59) The shadow of them darkened her sight.
-  (Conf: 1.00, Para: 59) She tried to lift her head and see into the crowd.
-  (Conf: 1.00, Para: 59) The other two she had been standing with, the newspaper journalists, her eyes couldn’t find them.
-  (Conf: 1.00, Para: 59) She dribbled blood, could not let it go, closed her eyes only for the length of time it took to drink it up again.
+  (Conf: 1.00, Para: 166) There are extra floors, with lots of people on them.
+  (Conf: 1.00, Para: 391) It made a smooth track to the door of Miranda’s room, where it stopped, because Miranda’s door was closed.
+  (Conf: 1.00, Para: 391) He had left his window open.
+  (Conf: 1.00, Para: 391) I can make them grow.
+  (Conf: 1.00, Para: 391) Do you know the all-season apples?
+  (Conf: 1.00, Para: 395) The African with the silent chest chewed, swallowed and opened her mouth for more, while the couple picked up their cases and fled, leaving money on the hallway desk as payment for their stay.
+  (Conf: 1.00, Para: 463) Juju is not enough to protect you.
+  (Conf: 1.00, Para: 473) Our bodies struck like matches; she changed form under my hands, I went slowly, slowly,
+  (Conf: 1.00, Para: 487) Neither did I send the messages to Miri that said: Can you help me, I do miss her, you are the only one who knows where to find her, I think you talk to each other when I can’t hear.
+  (Conf: 1.00, Para: 591) It was the young girl that defeated the soucouyant.
 
 --- Narrator 2 ---
-  (Conf: 1.00, Para: 240) The perfect person was a girl.
-  (Conf: 1.00, Para: 240) Bobbed dark hair, black dress, pearls she was too young for, mouth, nose and chin familiar .
-  (Conf: 1.00, Para: 240) Miranda’s, almost.
-  (Conf: 1.00, Para: 240) Look, look, remember.
-  (Conf: 1.00, Para: 240) This sight might not come again.
-  (Conf: 1.00, Para: 240) The perfect person had beautifully shaped hands, but no fingernails.
-  (Conf: 1.00, Para: 240) A swanlike neck that met the jaw at a devastating but impossible angle.
-  (Conf: 1.00, Para: 240) Before Lily died, Miranda’s hair had been long enough to sit on.
-  (Conf: 1.00, Para: 240) Me after the clinic, but perfect.
-  (Conf: 1.00, Para: 240) Miranda turned the picture over and ran her hand over the back of it; in one, yes, two, three, four places the paper was rougher, once adhesive, now matted with fine hairs and specks of dust.
+  (Conf: 1.00, Para: 123) How could you endure that without falling in love?
+  (Conf: 1.00, Para: 180) That’s what birds are meant to do.
+  (Conf: 1.00, Para: 247) She was safe from the war that sickened what it touched from miles away, the new kind of image that lashed the conscience to the nerves, the pictures of Phnom Penh burning with a kind of pagan festivity, the young bones in the mud at Choeung Ek, the Cambodians and yellow-skinned priests sprawled in graves dug poorly and in great fear, graves they dug for themselves.
+  (Conf: 1.00, Para: 318) On my way back from lunch I saw Tijana standing at the school gate.
+  (Conf: 1.00, Para: 407) Aside from that, all I know about her is that she suffered from quite serious postnatal depression and couldn’t cope with me.
+  (Conf: 1.00, Para: 407) I’m assuming she hurt me, my birth mother.
+  (Conf: 1.00, Para: 451) She followed Eliot’s rule of always making recourse to the essay question at the beginning and end of every paragraph, no matter how obvious the connection.
+  (Conf: 1.00, Para: 558) It was a steel cage with lots of ornamental coils in the metal.
+  (Conf: 1.00, Para: 558) It rattles as it arrives at the floor you’re standing on, but the doors open smoothly and silently.
+  (Conf: 1.00, Para: 562) Like Miranda, he smiled a lot, but more as if he was amused than as if he was trying to fend off the anger of the person he was speaking to.
 
 --- Narrator 3 ---
-  (Conf: 1.00, Para: 7) Does she remember me at all I miss her I miss the way her eyes are the same shade of grey no matter the strength or weakness of the light I miss the taste of her I see her in my sleep, a star planted seed-deep, her arms outstretched, her fists clenched, her black dress clinging to her like mud.
-  (Conf: 1.00, Para: 87) For a few months after we moved in it was just Lily, Miri, Dad and me in the house, no guests.
-  (Conf: 1.00, Para: 87) Decorating happened, the kitchen got updated; Lily went away to Mexico and came back with a pair of shrivelled corn-husk dolls that she put on a shelf in her studio when Miri and I rejected them.
-  (Conf: 1.00, Para: 87) During that time there was no better place in the neighbourhood for hide-and-seek, or for Robin Hood versus Sheriff of Nottingham swordstick fighting in the back garden.
-  (Conf: 1.00, Para: 87) There was no better place to play Hitler Resistance Force, a game I made up so I could be Churchill.
-  (Conf: 1.00, Para: 87) My first kiss was in the Andersen shelter, more a percussion of heads, faces, mouths than anything else.
-  (Conf: 1.00, Para: 87) Emma’s the sort of girl who likes boys who have unpredictable moods and write poetry and imagine things, so I played up to that.
-  (Conf: 1.00, Para: 87) We were in the shelter because she was supposed to be a Nazi double agent giving me secret information.
-  (Conf: 1.00, Para: 87) For some reason whilst kissing her my main preoccupation was not hurting her or bruising her.
-  (Conf: 1.00, Para: 87) I tried not to hold her too hard.
+  (Conf: 1.00, Para: 6) her heart thrums hard like hummingbird wings.
+  (Conf: 1.00, Para: 170) Miranda went down through the trapdoor and curled up in a corner of the indoor bomb shelter.
+  (Conf: 1.00, Para: 237) She didn’t realise she was asleep until a tapping on her door woke her.
+  (Conf: 1.00, Para: 240) The birds had iron feathers and claws as long as their beaks, but they hid their heads behind their wings.
+  (Conf: 1.00, Para: 253) Another girl came into view, looking so much like the first girl that Miranda thought she might be hallucinating.
+  (Conf: 1.00, Para: 356) She had decided the key was to pretend as if she hadn’t heard.
+  (Conf: 1.00, Para: 364) Jalil’s party trick hands, the hands he could turn in a full circle without putting stress on his wrist bone
+  (Conf: 1.00, Para: 364) The way the fingers twitched, she got a sense that they weren’t attached to a body, only to each other, and that she was watching ruptured nerve endings in denial.
+  (Conf: 1.00, Para: 636) She thought of the inscription Lily and Luc had had engraved around the insides of their wedding bands alongside the date of the ceremony, the letters were as deep in the gold as if they had been written on the very ore: NOW IS FOREVER.
+  (Conf: 1.00, Para: 658) He meant something by the pie.
 
 --- Narrator 4 ---
-  (Conf: 1.00, Para: 10) Why did you use the winter apples?
-  (Conf: 1.00, Para: 17) (homesick, home sick)
-  (Conf: 1.00, Para: 19) eaten a great deal of chalk—she really can’t help herself—she has been
-  (Conf: 1.00, Para: 29) WHAT HAPPENED TO LILY SILVER?
-  (Conf: 1.00, Para: 34) Don’t fall asleep yet.
-  (Conf: 1.00, Para: 35) You’re scared about Lily.
-  (Conf: 1.00, Para: 47) There is no such thing, Miri.
-  (Conf: 1.00, Para: 49) Don’t say that.
-  (Conf: 1.00, Para: 49) There is such a thing.
-  (Conf: 1.00, Para: 52) Come on, don’t be a baby.
-
---- Narrator 5 ---
-  (Conf: 1.00, Para: 28) me I will not allow her to live
-  (Conf: 1.00, Para: 64) I didn’t think you were doing it on purpose.
-  (Conf: 1.00, Para: 64) But then I didn’t think you’d made a mistake.
-  (Conf: 1.00, Para: 64) I don’t know what I thought.
-  (Conf: 1.00, Para: 64) I suppose I thought you were calling me Mike because Mike was my name, if you see what I mean.
-  (Conf: 1.00, Para: 334) I took the letter out of her hands and opened it for her.
-  (Conf: 1.00, Para: 334) She had been offered a place.
-  (Conf: 1.00, Para: 334) I kissed her cheek and said congratulations.
-  (Conf: 1.00, Para: 334) She opened her mouth and put one hand on her chest, the other to her cheek.
-  (Conf: 1.00, Para: 334) She didn’t say anything.
-
---- Narrator 6 ---
-  (Conf: 1.00, Para: 45) Shrill singing between my ears.
-  (Conf: 1.00, Para: 93) Pie-kah, pie-kah, I’ve got pie-kah.
-  (Conf: 1.00, Para: 335) My clever, darling girl,
-  (Conf: 1.00, Para: 720) We’ve been happy here,
-  (Conf: 1.00, Para: 799) Miranda was at my old school.
-  (Conf: 1.00, Para: 840) I was just being silly.
-  (Conf: 1.00, Para: 911) And lived happily ever after, I suppose,
-  (Conf: 1.00, Para: 951) My mental health is questionable anyway,
-  (Conf: 1.00, Para: 1031) Let me tell Eliot about this myself,
-  (Conf: 1.00, Para: 1062) I’m just really shit.
-
---- Narrator 7 ---
-  (Conf: 1.00, Para: 46) Why are you saying this?
-  (Conf: 1.00, Para: 46) It’s not true,
-  (Conf: 1.00, Para: 61) Why do people go to these places, these places that are not for them?
-  (Conf: 1.00, Para: 107) She had had such a strong feeling that she needed to talk to someone who would tell her some secret that would make everything alright.
-  (Conf: 1.00, Para: 107) She had been unable to think who it was.
-  (Conf: 1.00, Para: 107) She had sat awake long hours downstairs, looking into the empty white arch of the fireplace, her hands on her rib cage.
-  (Conf: 1.00, Para: 107) Who was it that needed to talk to her, that she needed to talk to?
-  (Conf: 1.00, Para: 107) She had gone through lists of people it could be.
-  (Conf: 1.00, Para: 107) She could only think of people that it couldn’t be.
-  (Conf: 1.00, Para: 107) It wasn’t Lily, it wasn’t her father, it wasn’t Eliot, it wasn’t any of the poets whose words stuck spikes in her, not even Rumi.
-
---- Narrator 8 ---
-  (Conf: 1.00, Para: 41) Quick, we’ve got to remember her.
-  (Conf: 1.00, Para: 43) We need more than that.
-  (Conf: 1.00, Para: 43) What else do we know?
-  (Conf: 1.00, Para: 43) What else is real about her?
-  (Conf: 1.00, Para: 67) I love you, do you love me?
-  (Conf: 1.00, Para: 120) But what will I do for a whole year?
-  (Conf: 1.00, Para: 132) Are those girls running after us?
-  (Conf: 1.00, Para: 177) I suppose so, but what am I going to do about clothes, then?
-  (Conf: 1.00, Para: 208) What am I meant to do with these?
-  (Conf: 1.00, Para: 246) Develop photos, I suppose.
-
---- Narrator 9 ---
-  (Conf: 1.00, Para: 12) (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
-  (Conf: 1.00, Para: 60) Stupid, stupid; Lily had been warned not to go to Haiti.
-  (Conf: 1.00, Para: 72) Here’s the thing; can’t afford that this term.
-  (Conf: 1.00, Para: 79) but ended up choking on a puff of dust that bolted down the chimney.
-  (Conf: 1.00, Para: 79) Next Lily showed us the little ration-book larder behind the kitchen; the shelves were wonky and the room had a floor so crazily checked that none of us could walk in a straight line in there.
-  (Conf: 1.00, Para: 79) I remember how brilliant I thought it all was; there was nothing for it but to jump in the air and yell and kick and make kung-fu noises.
-  (Conf: 1.00, Para: 88) There is another shelter inside the house.
-  (Conf: 1.00, Para: 88) It is beneath the sitting room with the fireplace; it is under a trapdoor set in the floor.
-  (Conf: 1.00, Para: 88) The room is dim and long and deep; a room for sleeping in.
-  (Conf: 1.00, Para: 88) Sleeping and not much else.
+  (Conf: 0.99, Para: 322) He was with Emma, and she was chatting blithely as he stowed the hammer in her bag.
+  (Conf: 1.00, Para: 403) The one who wore a stopped watch.
+  (Conf: 1.00, Para: 496) I told him about Sade and the phone, and he nodded thoughtfully.
+  (Conf: 1.00, Para: 506) I am lucky, in her GrandAnna’s mountainous hand.
+  (Conf: 1.00, Para: 511) In her seat in the Dean’s office, Miranda crossed her ankles.
+  (Conf: 1.00, Para: 515) I know they said it could never be love, but I wonder .
+  (Conf: 1.00, Para: 573) I frowned and looked at my towel.
+  (Conf: 1.00, Para: 578) Miranda’s dad produced a fat thug of a winter stew, full of meat and turnip and other vegetables that crunched.
+  (Conf: 1.00, Para: 598) I kissed her and she let me.
+  (Conf: 1.00, Para: 618) The girl’s eyes were plaintive.
 
