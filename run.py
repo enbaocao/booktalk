@@ -54,8 +54,8 @@ def load_and_split_text(file_path):
             text = file.read()
         # Split text into paragraphs
         paragraphs = re.split(r'\n\s*\n', text)
-        # Remove very short paragraphs (likely formatting artifacts)
-        paragraphs = [p.strip() for p in paragraphs if len(p.strip()) > 20]
+        # Remove very short paragraphs (likely formatting artifacts) and single-character paragraphs
+        paragraphs = [p.strip() for p in paragraphs if len(p.strip()) > 1]
         return paragraphs
     except FileNotFoundError:
         print(f"File not found: {file_path}")
@@ -115,7 +115,7 @@ def extract_features(paragraphs):
         'exclamation_ratio',
         'semicolon_ratio'
     ]
-    
+
     for paragraph in paragraphs:
         if not paragraph.strip():
             continue
@@ -454,7 +454,7 @@ def generate_summary_report(paragraphs, labels, confidence, ambiguous_sections,
 
 def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, min_confidence=0.9, output_dir='output'):
     """Generate a file with example sentences for each narrator cluster, 
-       selecting randomly from high-confidence sentences for better spread."""
+       selecting the first N high-confidence sentences encountered."""
     narrator_sentences = {i: [] for i in np.unique(labels)}
     
     # Collect all sentences meeting the minimum confidence threshold
@@ -470,7 +470,8 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
     output_path = os.path.join(output_dir, 'narrator_examples.txt')
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("=== EXAMPLE SENTENCES FOR EACH NARRATOR ===\n")
-        f.write("(Randomly selected from sentences with confidence >= ")
+        f.write("(First ")
+        f.write(f"{n_examples} sentences encountered with confidence >= ")
         f.write(f"{min_confidence})\n\n")
         
         for narrator in sorted(narrator_sentences.keys()):
@@ -478,20 +479,17 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
             
             high_conf_sentences = narrator_sentences[narrator]
             
-            # Randomly sample if more examples exist than needed, otherwise take all
-            if len(high_conf_sentences) > n_examples:
-                selected_examples = random.sample(high_conf_sentences, n_examples)
-            else:
-                selected_examples = high_conf_sentences
-            
-            # Sort the selected examples by paragraph index for readability in the output file
-            selected_examples.sort(key=lambda x: x[2]) 
+            # Sort all collected high-confidence sentences by paragraph index
+            high_conf_sentences.sort(key=lambda x: x[2]) 
 
+            # Take the first n_examples
+            selected_examples = high_conf_sentences[:n_examples]
+            
             unique_sentences_added = set()
             examples_added = 0
             
             for sentence, conf, p_idx in selected_examples:
-                # Double check for uniqueness, although random.sample should handle it
+                # Double check for uniqueness, although unlikely needed now
                 if sentence not in unique_sentences_added:
                     f.write(f"  (Conf: {conf:.2f}, Para: {p_idx}) {sentence}\n")
                     unique_sentences_added.add(sentence)
@@ -504,7 +502,6 @@ def generate_example_sentences(paragraphs, labels, confidence, n_examples=10, mi
                  if len(high_conf_sentences) < n_examples:
                      f.write(f"  (Only found {len(high_conf_sentences)} high-confidence sentences in total)\n")
                  else:
-                     # This case might occur if random sample picked duplicates somehow, though unlikely
                      f.write(f"  (Selected {examples_added} unique sentences)\n")
 
             f.write("\n")
@@ -646,7 +643,7 @@ def main():
                 ambiguous_sections, transitions, args.output)
 
     print("Generating example sentences for each narrator...")
-    generate_example_sentences(paragraphs, labels, confidence, n_examples=10, output_dir=args.output)
+    generate_example_sentences(paragraphs, labels, confidence, n_examples=20, output_dir=args.output)
 
     print("Generating list of most uncertain sentences...")
     generate_uncertain_sentences(paragraphs, labels, confidence, n_examples=100, output_dir=args.output)
