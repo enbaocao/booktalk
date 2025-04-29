@@ -2,18 +2,18 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="pt-6 px-[10%] border-b border-gray-300">
+    <header className="pt-6 px-[10%]">
       <div className="flex flex-col md:flex-row justify-between md:items-end pb-4">
         <div>
           <h1 className="text-6xl font-bold mb-1">
-            White is for Witching: Narrator Analysis
+            White is for Witching: A Study into Narrative Voices
           </h1>
           <p className="text-2xl text-gray-600">By XX</p>
         </div>
-        <nav className="space-x-4 mt-2 md:mt-0 text-xl">
-          <Link href="#summary" className="text-gray-700 hover:text-black">Summary</Link>
-          <Link href="#narrators" className="text-gray-700 hover:text-black">Narrators</Link>
-          <Link href="#about" className="px-3 py-1 border border-gray-400 rounded hover:bg-gray-100">About</Link>
+        <nav className="flex space-x-8 mt-2 md:mt-0 text-xl">
+          <Link href="#summary" className="text-gray-500 hover:text-gray-800 no-underline">Summary</Link>
+          <Link href="#narrators" className="text-gray-500 hover:text-gray-800 no-underline">Narrators</Link>
+          <Link href="#about" className="px-3 py-1 hover:bg-gray-100 text-gray-500 hover:text-gray-800 no-underline">About</Link>
         </nav>
       </div>
     </header>

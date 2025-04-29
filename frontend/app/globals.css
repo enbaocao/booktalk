@@ -8,6 +8,14 @@
   --background-end-rgb: 248, 247, 243;   /* Beige background */
 }
 
+/* Custom spacing for navigation links */
+nav.flex > a {
+  margin-right: 2rem;
+}
+nav.flex > a:last-child {
+  margin-right: 0;
+}
+
 /* Optional: Dark mode adjustments if needed later */
 /* @media (prefers-color-scheme: dark) {
   :root {
