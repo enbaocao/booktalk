@@ -1,503 +1,503 @@
 === TOP 100 MOST UNCERTAIN SENTENCES ===
 (Sorted by lowest confidence score)
 
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: Miranda politely flicked my hands away from her and sashayed out among them.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: They all looked at her and smiled slavishly.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: When she had passed through them, they looked at me again.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: They were alabaster white, every one of them.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: I went after her.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: They looked at me, crowded so close, murder in their eyes.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: If I didn’t believe in the salt I would be lost.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: Believe, believe.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: Salt is true.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: Salt is true.
-
-Confidence: 0.6351
-Assigned Narrator: 6
-Paragraph Index: 544
-Sentence: Kill the soucouyant, salt and pepper.
-
-Confidence: 0.9435
-Assigned Narrator: 4
-Paragraph Index: 424
-Sentence: I moved the furniture in the place I slept in (moved it and moved it and moved it), I walked down alleyways with a camera stuck to my face as if I couldn’t see without it.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: She ran downstairs, away from him.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: There was someone strange at the front door.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: They stood where the Christmas tree had stood until the day after Boxing Day, when Sade had dismantled it for fear of bad luck.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: The stranger wore a big black hat and she didn’t dare to pass them.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: Their back was to her, and they stood very straight, with a shapeless coat draped over them in such a way as to put the existence of limbs in doubt.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: And yet they stood.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: It was in trapdoor-room that she fell, and the house caught her.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: She had thought she would find the goodlady below, or Lily, or Jennifer, or her GrandAnna, but there was no one there but her.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: In trapdoor-room her lungs knocked against her stomach and she lay down on the white net that had saved Ore but would not save her.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: Two tiny moons flew up her throat.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: She squeezed them, one in each hand, until they were two silver kidneys.
-
-Confidence: 0.9541
-Assigned Narrator: 5
-Paragraph Index: 576
-Sentence: Acid seeped through her.
-
-Confidence: 0.9897
-Assigned Narrator: 2
-Paragraph Index: 1
-Sentence: Her throat is blocked with a slice of apple (to stop her speaking words that may betray her) her ears are filled with earth (to keep her from hearing sounds that will confuse her) her eyes are closed, but her heart thrums hard like hummingbird wings.
-
-Confidence: 0.9994
+Confidence: 0.9909
 Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: I frowned and looked at my towel.
+
+Confidence: 0.9909
+Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: Where it had touched me it was striped with black liquid, as dense as paint (don’t scream) there were shreds of hard skin in it.
+
+Confidence: 0.9909
+Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: There was hair suspended in it Bri-tons never-never-never, shall be slaves My skin stung.
+
+Confidence: 0.9909
+Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: Where to put this towel?
+
+Confidence: 0.9909
+Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: I grew ugly in my need to make sure no one ever saw it, my face collapsing in on itself as I hand-washed the towel in the sink.
+
+Confidence: 0.9909
+Assigned Narrator: 3
+Paragraph Index: 503
+Sentence: I dressed slowly and carefully, and by the time I’d put the towel on the rack to dry and opened the door, the passageway was empty.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: My mum keeps worrying that she’s not filling the space left by my birth mother.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: My dad was the same as well, forcing me to spend hours at the park with him and a football until he realised that, like him, I was much better at watching football than playing it, plus if I wanted to talk to him I’d do it without using sport as a crutch.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: she keeps finding stuff in the African folklore section of the local library that she feels bound to tell me because she thinks my mother might have.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: Mum kept calling me Ore even though she really wanted a daughter called Rose.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: My name is not a big deal to me—if it was Rose it would’ve worked better with my surname and people would be able to spell it without that moment of uncertainty before putting pen to paper.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: Rose Lind is easily filed, she is a delight, she is Shakespearean, sort of.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: My birth mother was a legal immigrant.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: She and whoever my birth father was weren’t together.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: Aside from that, all I know about her is that she suffered from quite serious postnatal depression and couldn’t cope with me.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: Postnatal depression is common enough for me to assume that there were other factors that led to me being put in care.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: I’m assuming she hurt me, my birth mother.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: I wasn’t even a year old.
+
+Confidence: 0.9964
+Assigned Narrator: 3
+Paragraph Index: 351
+Sentence: I’m glad I don’t remember anything.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: My Miranda came home from college and her change had almost come full circle.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: She looked so beautiful.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: Immaculately carved; an ivory wand.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: Her eyes were oracle’s eyes, set deep, deep in the smooth planes of her face.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: She had six and a half ulcers on the insides of her mouth (one was not yet complete), jewels formed by the acid her stomach had hopefully, uselessly produced.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: She was no longer able to eat comfortably, even if she wanted to.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: When she kissed her brother hello she had to close her throat for a second, to stop herself from wincing aloud.
+
+Confidence: 0.9981
+Assigned Narrator: 3
+Paragraph Index: 447
+Sentence: The layers between her inner and outer cheek were not thick enough.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: She opened the college gate with her key and stepped out onto the street.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: I followed her; she hadn’t said that I couldn’t.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: It was full moon.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: No one was out, and it was so cold that our breath stained the air around our heads.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: I don’t know what kind of bird chirps at night.
+
+Confidence: 0.9997
+Assigned Narrator: 2
+Paragraph Index: 411
+Sentence: We walked towards the mill pond.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 258
+Sentence: You can only take pictures like that if you’re able to see ghosts.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 258
+Sentence: Why can’t I?
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 258
+Sentence: On Sunday afternoon Sade washed the sitting-room windows from the inside, an expression of pure patience on her face as Miranda tried to teach her to whistle.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 258
+Sentence: She couldn’t get the hang of it.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 258
+Sentence: Every time she got the right length of breath going, she looked nervous, opened her mouth fully and said whoooooosh.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: I didn’t say anything, but I knew what I thought; it was her mother’s fault for abandoning her.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: Babies get me down, but I’d seen photos of Lily as a baby and she looked robust and fun.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: There was a consciousness in her eyes that made her pudgy helplessness seem sarcastic.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: She looked as if she could easily have been adapted into an accomplice for many practical jokes.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: And she’d only been a year old.
+
+Confidence: 0.9998
+Assigned Narrator: 3
+Paragraph Index: 170
+Sentence: Our grandma Jennifer was pretty, an indifferent student (we’d seen her photographs and report cards bound with pink ribbon) and she’d run off with someone dashing and foreign, a different dashing and foreign someone to whoever Lily’s dad had been.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: Lily was the changer who came home the same.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: But that last time the signs were bad.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: When she left, she had forgotten her watch on the telephone stand in the hallway, a brass body with thin leather arms, ticking away Haitian time, six hours behind ours.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: How could she have forgotten her watch?
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: She never had before.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 21
+Sentence: Miri and I had debated leaving it where it was (that seemed luckier), then Miri had confiscated it for safekeeping in case one of the houseguests stole it or broke it or something.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 526
+Sentence: What was the rule to observe?
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 526
+Sentence: What offering could I make?
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 526
+Sentence: I was by Miranda’s bed, trying to hold my breath because it seemed too loud, when she woke up.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 526
+Sentence: She looked at me uncomprehendingly for a long moment, her eyes dark through the hair tumbled over her face.
+
+Confidence: 0.9999
+Assigned Narrator: 3
+Paragraph Index: 526
+Sentence: She closed one eye, then the other, then opened them both again.
+
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: Luc knows this feeling, from an early visit he made here with Lily and the twins.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: He knew that I was nothing like that flat of theirs in London.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: One day he came in from the back garden and stood in the sitting-room doorway, smiling while his wife sat on the floor knitting a tiny jacket for one of Miranda’s dolls and using a socked foot to wheel Eliot’s spare trains across the carpet so he could have train races.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: It was summer, Lily had tied streamers to the ceiling fan and her freckled shoulders were covered with sun cream.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: And the twins had four years of life between them, Eliot in a pink T-shirt that hugged his pot belly and Miranda in a dark-blue dress and a little sailor’s hat.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: There was a thing that Lily, Eliot and Miranda tended to do when they were together and he joined him.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: They pretended he wasn’t there at first.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: He knew that on some level it was intended for his benefit, so he could look at his rosy little English family as if they were in a portrait.
 
-Confidence: 0.9994
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 175
 Sentence: When he said hello they’d come alive to him, but first he had to say it.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: I don’t have a lift phobia, but the lift in that house daunted me from the first.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: It was a steel cage with lots of ornamental coils in the metal.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: It rattles as it arrives at the floor you’re standing on, but the doors open smoothly and silently.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: I took the stairs—Miranda had told me that it was only a flight up to hers and Eliot’s rooms.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: It seemed more like four.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: But in an unfamiliar house, when you’re uncertain where you’re going, every movement is prolonged by the sense that you’re going to try the wrong door or get in someone’s way and bother someone.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: It doesn’t matter how big or small the space—if you don’t know it, you get lost in it.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: Somehow I was at the top of the house, looking at a door with a twist of rancid-smelling cloth nailed to it.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: I turned away to try my luck with the staircase again, but turned back when I heard whispering.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: It was as soft as snowfall, but it took over all my hearing.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: I couldn’t hear what exactly was being said, but the murmuring glowed in my skull and didn’t stop, not even when I covered my head with both hands.
 
-Confidence: 0.9995
-Assigned Narrator: 3
+Confidence: 0.9999
+Assigned Narrator: 4
 Paragraph Index: 488
 Sentence: There was more than one voice.
 
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: When she tried on the last dress in the pile he’d built up, she was sure he would like it.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: He had to.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: It didn’t look like anything she already had, the skirt flared wonderfully, and there was the sweet ribbon bow at the waist.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: It was a dress to be worn by the sort of girl who’d check that no one was looking, then skip down a quiet street instead of walking, just so the fun of it was hers alone.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: She looked around the corner of the fitting-room door and saw her father standing with his hands in his pockets, his tie removed and folded into a pocket of his crumpled suit, where part of it unfurled like a yellow-and-blue-striped tongue.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: A woman who had come shopping alone seemed to be asking his advice on the dress she’d tried on.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: He nodded and smiled, his eyes crinkling at the corners, before giving the woman’s dress a thumbs-up, which made Miranda laugh because her father only gave things a thumbs-up when he thought they were stupid and populist.
-
-Confidence: 0.9995
-Assigned Narrator: 5
-Paragraph Index: 84
-Sentence: The woman touched his arm and said thank you.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: When Miranda introduced us, Eliot turned the handshake into a complicated back-patting and finger-snapping thing he’d picked up in Cape Town.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: He did it with enough irony for me not to dread him.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: He was milder than I’d expected.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: Like Miranda, he smiled a lot, but more as if he was amused than as if he was trying to fend off the anger of the person he was speaking to.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: By the end of an hour’s lolling around in the sitting room I’d decided that he was alright.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: The sitting room was severe and full of space—the chairs were arranged a respectful distance away from the television screen—you could sit and converse in the armchairs by the window, or sit in the chairs in the middle of the room and switch the TV off so it wasn’t part of the conversation.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: It wasn’t the sort of room where you sat and ate snacks or meals while watching Neighbours.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: For example there were no cushions.
-
-Confidence: 0.9998
-Assigned Narrator: 6
-Paragraph Index: 492
-Sentence: My family uses cushions to protect our laps from hot plates.
-
-Confidence: 0.9998
-Assigned Narrator: 4
-Paragraph Index: 592
-Sentence: Once for no, twice for yes Once for no, twice for yes hear me My question wasn’t loud enough to be heard outside of the room, but two creaks came from above, paired with deliberation.
-
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: The next day Miranda’s overcoat was ready.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: She could barely believe that such a simple-looking coat could take so much work, so much staring at rumpled sewing-machine tracks on cloth, wondering what had gone wrong, wondering why the needle had stabbed that place instead of this.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: It looked so fine on the mannequin proved very useful for me when Miranda, Luc and Eliot left for the airport.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: Especially as I did not have much time.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: I could not, for example, use the looking people.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: Things progress quite slowly with them.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: And Luc’s precision meant that when he said four hours he would most likely be away for a little less than that, even.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: It was very unlikely that he would be gone for more.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: Besides, the key thing was to have everything as it was, or almost as it was, by the time Miranda returned.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: I allowed three hours and forty-three minutes to pass without incident.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: I was confident.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 337
-Sentence: The forty-fourth minute before the fourth hour, began in Eliot’s room.
+Assigned Narrator: 3
+Paragraph Index: 45
+Sentence: Dad had been a waiter, then a trainee chef, then a food critic, and each job had bored him to the point of existential crisis.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: During the first few weeks, I saw Tijana every day.
+Paragraph Index: 45
+Sentence: This thing with the house was plan B.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: We went to the Freshers Fair together and debated buying membership to the union, finally deciding in favour when someone at the stall told us that not only was Ben and Jerry’s sold at the union at cheaper prices than those at Sainsbury’s, but it was sold there long after Sainsbury’s closed, too.
+Paragraph Index: 45
+Sentence: Or C, or D or X.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: When students handing out flyers for the Assassin’s Guild started circling us, an expression of distaste crossed Tijana’s face and she was, quite suddenly, gone.
+Paragraph Index: 45
+Sentence: Without the guests and the maintenance and the folders of forms and bills, Dad would just sit.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: I wasn’t fast enough.
+Paragraph Index: 45
+Sentence: It’s almost as if Lily knew, years and years in advance, that she was leaving us.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: One of them, a very large guy, and brooding, not unlike like a manatee with matted hair, was wearing red-and-white-checked trousers and a top hat with a tag in it for ten shillings and sixpence.
+Paragraph Index: 45
+Sentence: As if she was gifting him something to be later, after her.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: He started hovering across my path, his arm out, doing something very like cornering me, smiling and cajoling, saying I looked like the sort of girl who was really game.
+Paragraph Index: 45
+Sentence: That’s not true, and it’s not possible, but .
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: Game for what?
+Paragraph Index: 45
+Sentence: the way she indulged him so completely.
 
 Confidence: 0.9999
 Assigned Narrator: 3
-Paragraph Index: 352
-Sentence: I smiled, took a flyer, then pretended I saw someone I knew and strolled away without looking back.
+Paragraph Index: 45
+Sentence: She gave him her house; Lily and Miri and I just lived in it.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: How easy to peel the covers back and pinch her mouth shut with one unyielding hand, to close the nostrils with the other.
+Assigned Narrator: 3
+Paragraph Index: 45
+Sentence: The capital man is the sum of his possessions.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: How easy to suffocate.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: (My sister turned seventeen in a mental health clinic; I brought our birthday cake to her there.)
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: Her heart and lungs were already weak.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: Miri’s accusations, her whole manner that night scared the shit out of me.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: It would not have taken much to kill Miranda.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: She looked in my direction but she couldn’t seem to focus on me.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: That moment passed.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: She was the thinnest I’d ever seen her.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: In the next moment my thought was to let her die.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: Her hands and head were the heaviest parts of her.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: If she continued as she was, that would be soon.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: Her neck drooped.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 456
-Sentence: Then in the moment after that I resolved to take her away.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: She hugged herself, her fingers pinning her dress to her ribs.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: It’s hard to believe that there are girls as straightforwardly sexy as Ore Lind who also get into Cambridge.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: There was an odd smell to her, heavy and thick.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: It’s even harder for me to believe that girls that looked like her got into Cambridge and befriended my sister.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: It was clear to me that she was slipping again, down a new slide.
 
 Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: Ore is almost as tall as me.
+Assigned Narrator: 3
+Paragraph Index: 6
+Sentence: When she said she didn’t trust me, I turned away rather than let myself get angrier.
 
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: Plaits and ribbons and a scent of coconut.
+Confidence: 1.0000
+Assigned Narrator: 3
+Paragraph Index: 537
+Sentence: When I stepped out of the room with my bag over my shoulder, the corridor mixed twilight and green and I could hear a whistling sound from upstairs, like air gliding around something of great mass.
 
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: Big, bright eyes.
+Confidence: 1.0000
+Assigned Narrator: 3
+Paragraph Index: 537
+Sentence: I could have been inside a cannon.
 
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: She had this constantly benevolent expression, somewhere between a smile and a look of preoccupation.
+Confidence: 1.0000
+Assigned Narrator: 3
+Paragraph Index: 537
+Sentence: But I did not run.
 
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: She’d brought Miri a lollipop and spent the afternoon in an armchair in front of the TV, languidly licking both her lollipop and Miri’s rejected one, the shoulder of her jumper dress slipping down, her knees drawn up so that her feet didn’t touch the ground.
-
-Confidence: 0.9999
-Assigned Narrator: 6
-Paragraph Index: 519
-Sentence: Her legs were long and slim and she’d dressed them in stockings that travelled up and up, marked by a strip of lace where they stopped—I only caught glimpses of those stocking tops, and couldn’t look too long without being blatant.
+Confidence: 1.0000
+Assigned Narrator: 3
+Paragraph Index: 537
+Sentence: I took a deep breath and set myself a march—I’m get-ting out I’m get-ting out, no mat-ter what, I’m get-ting out.
 

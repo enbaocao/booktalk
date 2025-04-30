@@ -643,7 +643,7 @@ def main():
                 ambiguous_sections, transitions, args.output)
 
     print("Generating example sentences for each narrator...")
-    generate_example_sentences(paragraphs, labels, confidence, n_examples=20, output_dir=args.output)
+    generate_example_sentences(paragraphs, labels, confidence, n_examples=50, output_dir=args.output)
 
     print("Generating list of most uncertain sentences...")
     generate_uncertain_sentences(paragraphs, labels, confidence, n_examples=100, output_dir=args.output)
