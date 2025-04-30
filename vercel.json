@@ -1,12 +1,5 @@
 {
   "framework": "nextjs",
-  "outputDirectory": "frontend/.next",
-  "buildCommand": "cd frontend && npm install typescript @types/react @types/node --save-dev && npm run build",
-  "installCommand": "npm install && cd frontend && npm install",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/$1"
-    }
-  ]
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/.next"
 }
